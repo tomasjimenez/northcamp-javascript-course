@@ -35,10 +35,20 @@ export default function ModuleHome() {
         </div>
         <div className={styles.details_course}>
           <h3 className={styles.course_title}>Herramientas</h3>
-          <div className={styles.app_tools}>Visual Studio Code</div>
-          <div className={styles.app_tools}>NodeJS</div>
-          <div className={styles.app_tools}>Git</div>
-          <div className={styles.app_tools}>RunJS</div>
+          <div className={styles.app_tools}>
+            <Link href="/herramientas/visual-studio-code/">
+              Visual Studio Code
+            </Link>
+          </div>
+          <div className={styles.app_tools}>
+            <Link href="/herramientas/node-js/">NodeJS</Link>
+          </div>
+          <div className={styles.app_tools}>
+            <Link href="/herramientas/git/">Git</Link>
+          </div>
+          <div className={styles.app_tools}>
+            <Link href="/herramientas/run-js/">RunJS</Link>
+          </div>
         </div>
       </div>
 
@@ -47,10 +57,7 @@ export default function ModuleHome() {
         <div className={styles.temary}>
           <ol>
             <li>
-              <Link
-                style={{ color: "black" }}
-                href="/temario/conociendo-javascript"
-              >
+              <Link href="/temario/conociendo-javascript/">
                 Conociendo JavaScript
               </Link>
               <ul>
@@ -58,58 +65,94 @@ export default function ModuleHome() {
                 <li>EcmaScript: las especificaciones de JavaScript</li>
               </ul>
             </li>
-            <li>Chrome y la consola: tus aliados</li>
             <li>
-              Agregando JavaScript en HTML
+              <Link href="/temario/chrome-y-consola/">
+                Chrome y la consola: tus aliados
+              </Link>
+            </li>
+            <li>
+              <Link href="/temario/agregando-javascript-en-html/">
+                Agregando JavaScript en HTML
+              </Link>
               <ul>
                 <li>Estrategias de carga de JavaScript</li>
               </ul>
             </li>
             <li>
-              Variables:
+              <Link href="/temario/variables/">Variables</Link>
               <ul>
                 <li>Tipos de Variables</li>
                 <li>Nomenclaturas</li>
               </ul>
             </li>
-            <li>Tipos de datos</li>
             <li>
-              Comentarios en el código
+              <Link href="/temario/tipos-de-datos/">Tipos de datos</Link>
+            </li>
+            <li>
+              <Link href="/temario/comentarios-en-codigo/">
+                Comentarios en el código
+              </Link>
               <ul>
                 <li>Consejos a la hora de poner comentarios</li>
               </ul>
             </li>
-            <li>Operadores aritméticos</li>
-            <li>Coerción: la cosa se pone interesante</li>
-            <li>¿Qué diablos es el hoisting?</li>
             <li>
-              Jugando con strings:
+              <Link href="/temario/operadores-aritmeticos/">
+                Operadores aritméticos
+              </Link>
+            </li>
+            <li>
+              <Link href="/temario/coercion/">
+                Coerción: la cosa se pone interesante
+              </Link>
+            </li>
+            <li>
+              <Link href="/temario/hoisting/">
+                ¿Qué diablos es el hoisting?
+              </Link>
+            </li>
+            <li>
+              <Link href="/temario/jugando-con-strings/">
+                Jugando con strings
+              </Link>
               <ul>
                 <li>Conociendo sus métodos</li>
                 <li>Template String</li>
               </ul>
             </li>
-            <li>Manejo de fechas</li>
             <li>
-              Estructuras de control
+              <Link href="/temario/manejo-de-fechas/">Manejo de fechas</Link>
+            </li>
+            <li>
+              <Link href="/temario/estructuras-de-control/">
+                Estructuras de control
+              </Link>
               <ul>
                 <li>Condicionales</li>
                 <li>Bucles e iteraciones</li>
               </ul>
             </li>
             <li>
-              Funciones
+              <Link href="/temario/funciones/">Funciones</Link>
               <ul>
                 <li>La forma clásica</li>
                 <li>Arrow function</li>
               </ul>
             </li>
-            <li>¿Qué es el scope?</li>
-            <li>Arrays o arreglos</li>
-            <li>Objetos</li>
-            <li>JSON</li>
             <li>
-              DOM
+              <Link href="/temario/scope/">¿Qué es el scope?</Link>
+            </li>
+            <li>
+              <Link href="/temario/arrays/">Arrays o arreglos</Link>
+            </li>
+            <li>
+              <Link href="/temario/objetos/">Objetos</Link>
+            </li>
+            <li>
+              <Link href="/temario/json/">JSON</Link>
+            </li>
+            <li>
+              <Link href="/temario/dom/">DOM</Link>
               <ul>
                 <li>¿Qué es el DOM?</li>
                 <li>Seleccionar, crear, insertar elementos en el DOM</li>
@@ -117,9 +160,11 @@ export default function ModuleHome() {
                 <li>Controlar clases CSS</li>
               </ul>
             </li>
-            <li>Eventos</li>
             <li>
-              Asincronía
+              <Link href="/temario/eventos/">Eventos</Link>
+            </li>
+            <li>
+              <Link href="/temario/asincronia/">Asincronía</Link>
               <ul>
                 <li>¿Qué es la asincronía?</li>
                 <li>Como dominar peticiones asíncronas</li>

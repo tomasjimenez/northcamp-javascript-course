@@ -1,24 +1,27 @@
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 
-export default function ConociendoJavascript() {
+export default function Scope() {
   return (
     <ModuleBlock
-      ComponentToRender={<TemarioConociendoJavaScript />}
-      back={{ title: "Temario", link: "/" }}
+      ComponentToRender={<TemarioScope />}
+      back={{
+        title: "Funciones",
+        link: "/temario/funciones/",
+      }}
       next={{
-        title: "Chrome y la consola: tus aliados",
-        link: "/temario/chrome-y-consola/",
+        title: "Arrays o arreglos",
+        link: "/temario/arrays/",
       }}
     ></ModuleBlock>
   );
 }
 
-function TemarioConociendoJavaScript() {
+function TemarioScope() {
   return (
     <div className={styles.container}>
       <article>
-        <h2 className={styles.title_block}>Conociendo JavaScript</h2>
+        <h2 className={styles.title_block}>¿Qué es el scope?</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

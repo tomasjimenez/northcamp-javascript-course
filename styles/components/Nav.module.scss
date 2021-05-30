@@ -20,6 +20,11 @@
       font-size: 1.1rem;
       font-weight: 400;
       text-align: left;
+      .nav_button_info {
+        .title_link {
+          padding: 0px 0px 0px 15px;
+        }
+      }
     }
 
     .nav_next {
@@ -27,6 +32,18 @@
       font-size: 1.1rem;
       font-weight: 400;
       text-align: right;
+      .nav_button_info {
+        .title_link {
+          padding: 0px 15px 0px 0px;
+        }
+      }
+    }
+    .nav_button_info {
+      .title_link {
+        margin: 8px 0px 0px 0px;
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
     }
   }
 }

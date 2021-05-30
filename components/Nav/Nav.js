@@ -7,28 +7,28 @@ export default function Nav({ title, back, next }) {
       <div className={`${styles.container_nav} ${styles.desktop}`}>
         <div className={styles.wrapper_nav}>
           <div className={styles.nav_back}>
-            {back.link && (
+            {back?.link && (
               <div className={styles.nav_button_info}>
                 <Link href={back.link}>
                   <a>
                     <i className={`${styles.arrow} ${styles.left}`} />
                     Atrás
+                    <div className={styles.title_link}>{back.title}</div>
                   </a>
                 </Link>
-                <div className={styles.title_link}>{back.title}</div>
               </div>
             )}
           </div>
           <div className={styles.nav_next}>
-            {next.link && (
+            {next?.link && (
               <div className={styles.nav_button_info}>
-                <Link href={next.link}>
+                <Link href={next.link} className={styles.pruebas}>
                   <a>
                     Siguiente
                     <i className={`${styles.arrow} ${styles.right}`} />
+                    <div className={styles.title_link}>{next.title}</div>
                   </a>
                 </Link>
-                <div className={styles.title_link}>{next.title}</div>
               </div>
             )}
           </div>
@@ -38,7 +38,7 @@ export default function Nav({ title, back, next }) {
       <div className={`${styles.container_nav} ${styles.mobile}`}>
         <div className={styles.wrapper_nav}>
           <div className={styles.nav_back}>
-            {back.link && (
+            {back?.link && (
               <Link href="/">
                 <a>
                   <i className={`${styles.arrow} ${styles.left}`} />
@@ -47,7 +47,7 @@ export default function Nav({ title, back, next }) {
             )}
           </div>
           <div className={styles.nav_next}>
-            {next.link && (
+            {next?.link && (
               <Link href={next.link}>
                 <a>
                   <i className={`${styles.arrow} ${styles.right}`} />

@@ -1,24 +1,27 @@
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 
-export default function ConociendoJavascript() {
+export default function ChromeConsola() {
   return (
     <ModuleBlock
-      ComponentToRender={<TemarioConociendoJavaScript />}
-      back={{ title: "Temario", link: "/" }}
+      ComponentToRender={<TemarioChromeConsola />}
+      back={{
+        title: "Conociendo JavaScript",
+        link: "/temario/conociendo-javascript",
+      }}
       next={{
-        title: "Chrome y la consola: tus aliados",
-        link: "/temario/chrome-y-consola/",
+        title: "Agregando JavaScript en HTML",
+        link: "/temario/agregando-javascript-en-html/",
       }}
     ></ModuleBlock>
   );
 }
 
-function TemarioConociendoJavaScript() {
+function TemarioChromeConsola() {
   return (
     <div className={styles.container}>
       <article>
-        <h2 className={styles.title_block}>Conociendo JavaScript</h2>
+        <h2 className={styles.title_block}>Chrome y la consola: tus aliados</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
