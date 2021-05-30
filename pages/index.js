@@ -16,7 +16,7 @@ export default function Home() {
           name="description"
           content="Temario curso JavaScript de NorthCamp School"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
 
       <Header />
