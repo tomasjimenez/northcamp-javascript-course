@@ -6,11 +6,11 @@ import SectionCourse from "../../components/SectionCourse/SectionCourse";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 
-export default function ModuleBlock({ ComponentToRender, now, nextLink }) {
+export default function ModuleBlock({ ComponentToRender, title, back, next }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NorthCamp School - Javascript - {now}</title>
+        <title>NorthCamp School - Javascript - {title}</title>
         <meta
           name="description"
           content="Temario curso JavaScript de NorthCamp School"
@@ -21,7 +21,7 @@ export default function ModuleBlock({ ComponentToRender, now, nextLink }) {
       <Header />
       <main>
         <SectionCourse />
-        <Nav now={now} nextLink={nextLink} />
+        <Nav title={title} back={back} next={next} />
         <section>{ComponentToRender}</section>
       </main>
 

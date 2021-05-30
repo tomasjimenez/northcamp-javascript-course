@@ -5,7 +5,8 @@ export default function ConociendoJavascript() {
   return (
     <ModuleBlock
       ComponentToRender={<TemarioConociendoJavaScript />}
-      nextLink="/"
+      back={{ title: "Temario", link: "/" }}
+      next={{ title: "Chrome y la consola: tus aliados", link: "/" }}
     ></ModuleBlock>
   );
 }
