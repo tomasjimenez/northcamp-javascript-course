@@ -1,0 +1,15 @@
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  .header__logo {
+    img {
+      max-width: 64px;
+    }
+  }
+}

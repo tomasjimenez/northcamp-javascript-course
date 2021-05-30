@@ -1,0 +1,17 @@
+.container__footer {
+  padding: 24px 0px;
+  background-color: #000000;
+  color: white;
+  .footer__text {
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__text {
+    text-align: center;
+  }
+}

@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/components/Home.module.scss";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import SectionCourse from "../components/SectionCourse/SectionCourse";
+import ModuleHome from "../modules/Home/ModuleHome";
 
 export default function Home() {
   return (
@@ -17,11 +19,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
-      <main>Contenido a mostrar</main>
+      <Header />
+      <main>
+        <SectionCourse />
+        <section>
+          <ModuleHome />
+        </section>
+      </main>
 
-      <footer className={styles.footer}>
-        <Footer></Footer>
+      <footer>
+        <Footer />
       </footer>
     </div>
   );

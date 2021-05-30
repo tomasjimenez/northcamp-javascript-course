@@ -1,6 +1,13 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import styles from "../../styles/components/Footer.module.scss";
 
 export default function Footer() {
-  return <footer>Esto es el footer :D</footer>;
+  return (
+    <footer className={styles.container__footer}>
+      <div className={styles.footer__text}>
+        NorthCamp School © 2021. Todos Los Derechos Reservados.
+      </div>
+    </footer>
+  );
 }

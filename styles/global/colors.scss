@@ -1,0 +1,73 @@
+$black: rgba(0, 0, 0, 1);
+$gray: rgba(241, 241, 241, 1);
+$grayDark: rgba(102, 102, 102, 1);
+$green: rgba(1, 167, 132, 1);
+$greenOpacity: rgba(0, 202, 146, 0.1);
+$white: rgba(255, 255, 255, 1);
+$orange: rgba(225, 118, 69, 1);
+$purple: rgba(107, 140, 255, 1);
+$blue: rgba(0, 51, 102, 1);
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-grayDark {
+  background-color: $grayDark;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-gray {
+  color: $gray;
+}
+
+.color-grayDark {
+  color: $grayDark;
+}
+
+.color-green {
+  color: $green;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-purple {
+  color: $purple;
+}
+
+.color-orange {
+  color: $orange;
+}

@@ -1,0 +1,85 @@
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $grayDark;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.375rem;
+  margin-bottom: 16px;
+}
+
+b {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-weight: 700;
+}
+
+section {
+  padding: 40px 0px 46px 0px;
+}
+
+::-moz-selection {
+  color: white;
+  background: $green;
+}
+
+::selection {
+  color: white;
+  background: rgba(1, 167, 132, 1);
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
