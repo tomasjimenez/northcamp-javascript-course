@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "../../styles/modules/ModuleHome.module.scss";
 
 export default function ModuleHome() {
@@ -45,7 +47,12 @@ export default function ModuleHome() {
         <div className={styles.temary}>
           <ol>
             <li>
-              Conociendo JavaScript
+              <Link
+                style={{ color: "black" }}
+                href="/temario/conociendo-javascript"
+              >
+                Conociendo JavaScript
+              </Link>
               <ul>
                 <li>¿Qué es JavaScript?: un poco de historia</li>
                 <li>EcmaScript: las especificaciones de JavaScript</li>

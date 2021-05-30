@@ -3,13 +3,14 @@ import styles from "../../styles/components/Home.module.scss";
 
 import Header from "../../components/Header/Header";
 import SectionCourse from "../../components/SectionCourse/SectionCourse";
+import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 
-export default function ModuleBlock({ ComponentToRender }) {
+export default function ModuleBlock({ ComponentToRender, now, nextLink }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NorthCamp School - Javascript - Temario</title>
+        <title>NorthCamp School - Javascript - {now}</title>
         <meta
           name="description"
           content="Temario curso JavaScript de NorthCamp School"
@@ -20,6 +21,7 @@ export default function ModuleBlock({ ComponentToRender }) {
       <Header />
       <main>
         <SectionCourse />
+        <Nav now={now} nextLink={nextLink} />
         <section>{ComponentToRender}</section>
       </main>
 

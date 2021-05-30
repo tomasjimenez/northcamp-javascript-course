@@ -100,7 +100,6 @@
       text-align: left;
       margin: 30px 0px 25px 0px;
       color: black;
-      cursor: pointer;
       &::before {
         cursor: initial;
         width: 2rem;
@@ -109,7 +108,7 @@
         font-size: 1.4rem;
         position: absolute;
         text-align: center;
-        top: -6px;
+        top: -4px;
         left: -2.8rem;
         content: counter(temary-counter);
         counter-increment: temary-counter;
@@ -119,6 +118,7 @@
     }
     ul {
       margin: 15px 0px 30px 0px;
+
       li {
         cursor: initial;
         font-size: 1.2rem;
