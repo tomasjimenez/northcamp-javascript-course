@@ -1,5 +1,6 @@
 .container_nav {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -7,25 +8,26 @@
   padding: 22px;
   color: white;
   text-align: center;
-
-  .nav_back {
+  .wrapper_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1296px;
     width: 100%;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: left;
-  }
+    margin: 0 auto;
+    .nav_back {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-align: left;
+    }
 
-  .nav_now {
-    width: 100%;
-    font-size: 1.3rem;
-    font-weight: 400;
-  }
-
-  .nav_next {
-    width: 100%;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: right;
+    .nav_next {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-align: right;
+    }
   }
 }
 
@@ -53,6 +55,18 @@
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .wrapper_nav {
+    width: 100%;
+    .nav_back {
+      margin-left: 25px;
+    }
+    .nav_next {
+      margin-right: 25px;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .desktop {
     display: none;
@@ -60,32 +74,26 @@
 
   .container_nav + .mobile {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    .nav_now {
-      width: 100%;
-      font-size: 1.3rem;
-      font-weight: 400;
-      text-align: center;
-    }
-    .nav_navigation {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    .wrapper_nav {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 12px;
       width: 100%;
-      margin: 15px 0px 0px 0px;
+      margin: 0 auto;
       .nav_back {
-        width: 50%;
         font-size: 1rem;
-        text-align: right;
+        margin-left: 0;
         padding-right: 10px;
       }
 
       .nav_next {
-        width: 50%;
+        width: 100%;
         font-size: 1rem;
-        text-align: left;
+        margin-right: 0;
         padding-left: 10px;
       }
     }

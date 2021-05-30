@@ -1,0 +1,36 @@
+.container {
+  max-width: 1396px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 0px 50px;
+  article {
+    .title_block {
+      margin-bottom: 12px;
+    }
+
+    .subtitle_block {
+      margin: 28px 0px 5px 0px;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .subsection_block {
+      margin: 28px 0px 5px 0px;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1396px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0px 25px;
+  }
+}
