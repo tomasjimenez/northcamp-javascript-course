@@ -81,6 +81,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "600px",
             margin: "20px auto",
           }}
+          alt="Screenshot descarga Visual Studio Code"
         />
         <h3 className={styles.subtitle_block}>Extensiones recomendadas</h3>
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
@@ -90,6 +91,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Document This"
           />
           Document This
         </h4>
@@ -107,6 +109,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "600px",
             margin: "30px auto",
           }}
+          alt="Uso de Document This"
         />
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
           <img
@@ -115,6 +118,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Auto Close Tag"
           />
           Auto Close Tag
         </h4>
@@ -130,6 +134,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "600px",
             margin: "30px auto",
           }}
+          alt="Caso de uso Auto Close Tag extension Visual Studio Code"
         />
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
           <img
@@ -138,6 +143,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Bracket Pair Colorizer"
           />
           Bracket Pair Colorizer
         </h4>
@@ -154,6 +160,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "600px",
             margin: "30px auto",
           }}
+          alt="Caso de uso extensión Visual Studio Code Bracket Pair Colorizer"
         />
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
           <img
@@ -162,6 +169,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Path Intellisense"
           />
           Path Intelisense
         </h4>
@@ -176,6 +184,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "600px",
             margin: "30px auto",
           }}
+          alt="Caso de uso de la extensión de Visual Studio Code Path Intellisense"
         />
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
           <img
@@ -184,6 +193,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Indent Rainbow"
           />
           Indent Rainbow
         </h4>
@@ -199,6 +209,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "300px",
             margin: "30px auto",
           }}
+          alt="Caso de uso de la extensión de Visual Studio Code Indent Rainbow"
         />
         <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
           <img
@@ -207,6 +218,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Prettier"
           />
           Prettier
         </h4>
@@ -221,6 +233,7 @@ function HerramientasVisualStudioCode() {
               maxWidth: "60px",
               marginRight: "10px",
             }}
+            alt="Logo extension Visual Studio Code Live Share"
           />
           Live Share
         </h4>
@@ -235,6 +248,7 @@ function HerramientasVisualStudioCode() {
             maxWidth: "300px",
             margin: "30px auto",
           }}
+          alt="Caso de uso de la extensión de Visual Studio Code Live Share"
         />
       </article>
     </div>
