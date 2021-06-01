@@ -3,17 +3,21 @@
   width: 100%;
   margin: 0 auto;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 0px 50px;
+  color: #222;
   article {
+    .title_extensions {
+      font-weight: 800;
+    }
     .title_block {
       margin-bottom: 12px;
     }
 
     .subtitle_block {
-      margin: 28px 0px 5px 0px;
-      font-weight: 500;
-      font-size: 1.2rem;
+      margin: 45px 0px 10px 0px;
+      font-weight: 600;
+      font-size: 1.8rem;
     }
 
     .subsection_block {
@@ -23,6 +27,10 @@
       display: flex;
       &.with_icon {
         align-items: center;
+      }
+
+      &.bold_title {
+        font-weight: 800;
       }
     }
   }

@@ -84,7 +84,9 @@ function HerramientasVisualStudioCode() {
           alt="Screenshot descarga Visual Studio Code"
         />
         <h3 className={styles.subtitle_block}>Extensiones recomendadas</h3>
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/document-this-logo.default"
             style={{
@@ -111,7 +113,9 @@ function HerramientasVisualStudioCode() {
           }}
           alt="Uso de Document This"
         />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/auto-close-tag.default"
             style={{
@@ -136,7 +140,9 @@ function HerramientasVisualStudioCode() {
           }}
           alt="Caso de uso Auto Close Tag extension Visual Studio Code"
         />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/bracket-pair-colorizer.default"
             style={{
@@ -162,7 +168,9 @@ function HerramientasVisualStudioCode() {
           }}
           alt="Caso de uso extensión Visual Studio Code Bracket Pair Colorizer"
         />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon}  ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/path-intellisense.default"
             style={{
@@ -186,7 +194,9 @@ function HerramientasVisualStudioCode() {
           }}
           alt="Caso de uso de la extensión de Visual Studio Code Path Intellisense"
         />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/indent-rainbow.default"
             style={{
@@ -211,7 +221,9 @@ function HerramientasVisualStudioCode() {
           }}
           alt="Caso de uso de la extensión de Visual Studio Code Indent Rainbow"
         />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/prettier.default"
             style={{
@@ -226,7 +238,9 @@ function HerramientasVisualStudioCode() {
           Formateador de código estricto. Aplica un estilo coherente analizando
           tu código y siempre todo tu equipo tendrá el mismo estilo de código.
         </p>
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           <img
             src="/images/herramientas/vscode/live-share.default"
             style={{

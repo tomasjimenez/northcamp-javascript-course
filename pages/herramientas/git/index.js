@@ -19,7 +19,6 @@ function HerramientasGit() {
           src="/images/herramientas/git/git-logo.png"
           style={{
             maxWidth: "300px",
-
             display: "block",
             margin: "30px auto",
           }}
