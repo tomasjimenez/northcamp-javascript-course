@@ -17,9 +17,13 @@
     }
 
     .subsection_block {
-      margin: 28px 0px 5px 0px;
-      font-weight: 400;
-      font-size: 1.1rem;
+      margin: 12px 0px 10px 0px;
+      font-weight: 300;
+      font-size: 1.3rem;
+      display: flex;
+      &.with_icon {
+        align-items: center;
+      }
     }
   }
 }
