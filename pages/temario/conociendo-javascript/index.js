@@ -1,5 +1,6 @@
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
+import Image from "next/image";
 
 export default function ConociendoJavascript() {
   return (
@@ -19,15 +20,15 @@ function TemarioConociendoJavaScript() {
     <div className={styles.container}>
       <article>
         <h2>Conociendo JavaScript</h2>
-        <img
-          src="/images/temario/conociendo-javascript/javascript-logo.png"
-          style={{
-            maxWidth: "200px",
-            display: "block",
-            margin: "50px auto",
-          }}
-          alt="Logo JavaScript"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/javascript-logo.png"
+            width="300"
+            height="300"
+            alt="Logo JavaScript"
+            loading="lazy"
+          />
+        </div>
         <p>
           <strong>JavaScript</strong> es un lenguaje de programación
           <strong> interpretado</strong>, significa que no necesita compilarse
@@ -61,15 +62,15 @@ function TemarioConociendoJavaScript() {
           <strong>Tim Berners-Lee</strong>, uno de los padres de Internet,
           mientras trabajaba para el CERN.
         </p>
-        <img
-          src="/images/temario/conociendo-javascript/worldwideweb.gif"
-          style={{
-            maxWidth: "900px",
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Captura de pantalla de WorldWideWeb de 1993"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/worldwideweb.gif"
+            width="1100"
+            height="664"
+            alt="Captura de pantalla de WorldWideWeb de 1993"
+            loading="lazy"
+          />
+        </div>
         <p>
           En diciembre de 1991 en Estados Unidos aprueba la{" "}
           <strong>ley de computación de alto desempeño</strong>, donde inyecta
@@ -324,6 +325,7 @@ function TemarioConociendoJavaScript() {
           including versions of Lorem Ipsum.
         </p>
       </article>
+      <div>FUENTES: https://www.youtube.com/watch?v=0b7wyn9UWpE</div>
     </div>
   );
 }

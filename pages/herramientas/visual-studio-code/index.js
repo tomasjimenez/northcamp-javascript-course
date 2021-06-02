@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 
@@ -15,18 +17,15 @@ function HerramientasVisualStudioCode() {
     <div className={styles.container}>
       <article>
         <h2 className={styles.title_block}>Visual Studio Code</h2>
-        <img
-          src="/images/herramientas/vscode/vscode.webp"
-          width="200"
-          height="200"
-          style={{
-            maxWidth: "200px",
-            maxHeight: "200px",
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Logo Visual Studio Code"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/vscode/vscode.webp"
+            width="200"
+            height="200"
+            alt="Logo Visual Studio Code"
+            loading="lazy"
+          />
+        </div>
         <p>
           <strong>Visual Studio Code</strong> es un editor de código fuente
           desarrollado por Microsoft para Windows, Linux y macOS. Incluye
@@ -69,61 +68,68 @@ function HerramientasVisualStudioCode() {
         <p>
           Para instalar <strong>Visual Studio Code</strong>, debemos de acceder
           a este{" "}
-          <a href="https://code.visualstudio.com/download" target="_blank">
-            <span style={{ textDecoration: "underline" }}>enlace</span>
-          </a>
+          <Link href="https://code.visualstudio.com/download">
+            <a style={{ textDecoration: "underline" }} target="_blank">
+              enlace
+            </a>
+          </Link>
           {""}, y descargar el enlace correspondiente a tu sistema operativo.
         </p>
-        <img
-          src="/images/herramientas/vscode/vscode-download.png"
-          style={{
-            display: "block",
-            maxWidth: "600px",
-            margin: "20px auto",
-          }}
-          alt="Screenshot descarga Visual Studio Code"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/vscode/vscode-download.png"
+            width="850"
+            height="500"
+            alt="Screenshot descarga Visual Studio Code"
+            loading="lazy"
+          />
+        </div>
         <h3 className={styles.subtitle_block}>Extensiones recomendadas</h3>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/document-this-logo.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Document This"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/document-this-logo.jpeg"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Document This"
+              loading="lazy"
+            />
+          </div>
           Document This
         </h4>
-
         <p>
           Genera automáticamente comentarios JSDoc detallados para archivos
           TypeScript y JavaScript. Es muy útil junto a JSDoc, porque podemos
           autogenerar documentación y hasta si sabemos utilizarlo bien, puede
           valernos para la validación de tipos de datos sin usar TypeScript.
         </p>
-        <img
-          src="/images/herramientas/vscode/document-this.gif"
-          style={{
-            display: "block",
-            maxWidth: "600px",
-            margin: "30px auto",
-          }}
-          alt="Uso de Document This"
-        />
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/document-this.gif"
+            width="800"
+            height="500"
+            alt="Uso de Document This"
+            loading="lazy"
+          />
+        </div>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/auto-close-tag.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Auto Close Tag"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/auto-close-tag.jpeg"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Document This"
+              loading="lazy"
+            />
+          </div>
           Auto Close Tag
         </h4>
         <p>
@@ -131,26 +137,29 @@ function HerramientasVisualStudioCode() {
           Con esta extensión vas a conseguir de una forma automática cerrar tus
           tags de HTML o etiquetas de WebComponents.
         </p>
-        <img
-          src="/images/herramientas/vscode/auto-close-tag.gif"
-          style={{
-            display: "block",
-            maxWidth: "600px",
-            margin: "30px auto",
-          }}
-          alt="Caso de uso Auto Close Tag extension Visual Studio Code"
-        />
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/auto-close-tag.gif"
+            width="800"
+            height="500"
+            alt="Caso de uso Auto Close Tag extension Visual Studio Code"
+            loading="lazy"
+          />
+        </div>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/bracket-pair-colorizer.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Bracket Pair Colorizer"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/bracket-pair-colorizer.jpeg"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Bracket Pair Colorizer"
+              loading="lazy"
+            />
+          </div>
           Bracket Pair Colorizer
         </h4>
         <p>
@@ -159,52 +168,59 @@ function HerramientasVisualStudioCode() {
           anidaciones, así podemos saber en todo momento a quién corresponde esa
           anidación.
         </p>
-        <img
-          src="/images/herramientas/vscode/bracket-pair-colorizer.png"
-          style={{
-            display: "block",
-            maxWidth: "600px",
-            margin: "30px auto",
-          }}
-          alt="Caso de uso extensión Visual Studio Code Bracket Pair Colorizer"
-        />
-        <h4
-          className={`${styles.subsection_block} ${styles.with_icon}  ${styles.bold_title}`}
-        >
-          <img
-            src="/images/herramientas/vscode/path-intellisense.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Path Intellisense"
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/bracket-pair-colorizer.png"
+            width="800"
+            height="140"
+            alt="Caso de uso extensión Visual Studio Code Bracket Pair Colorizer"
+            loading="lazy"
           />
+        </div>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/path-intellisense.png"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Path Intellisense"
+              loading="lazy"
+            />
+          </div>
           Path Intelisense
         </h4>
         <p>
           Cuando tienes que importar un modulo de JavaScript, necesitas poner su
           ruta, y esta extensión te ayuda a completar la ruta.
         </p>
-        <img
-          src="/images/herramientas/vscode/path-intellisense.gif"
-          style={{
-            display: "block",
-            maxWidth: "600px",
-            margin: "30px auto",
-          }}
-          alt="Caso de uso de la extensión de Visual Studio Code Path Intellisense"
-        />
+        Caso de uso extensión Visual Studio Code Bracket Pair Colorizer"
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/path-intellisense.gif"
+            width="700"
+            height="400"
+            alt="Caso de uso de la extensión de Visual Studio Code Path Intellisense"
+            loading="lazy"
+          />
+        </div>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/indent-rainbow.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Indent Rainbow"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/indent-rainbow.jpeg"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Indent Rainbow"
+              loading="lazy"
+            />
+          </div>
           Indent Rainbow
         </h4>
         <p>
@@ -212,26 +228,29 @@ function HerramientasVisualStudioCode() {
           dentro de un scope o un bloque. Con esta extensión, cada bloque de
           código aparecerá con un color en cada línea.
         </p>
-        <img
-          src="/images/herramientas/vscode/indent-rainbow.png"
-          style={{
-            display: "block",
-            maxWidth: "300px",
-            margin: "30px auto",
-          }}
-          alt="Caso de uso de la extensión de Visual Studio Code Indent Rainbow"
-        />
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/indent-rainbow.png"
+            width="300"
+            height="350"
+            alt="Caso de uso de la extensión de Visual Studio Code Indent Rainbow"
+            loading="lazy"
+          />
+        </div>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/prettier.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Prettier"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/prettier.jpeg"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Prettier"
+              loading="lazy"
+            />
+          </div>
           Prettier
         </h4>
         <p>
@@ -241,29 +260,32 @@ function HerramientasVisualStudioCode() {
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
-          <img
-            src="/images/herramientas/vscode/live-share.default"
-            style={{
-              maxWidth: "60px",
-              marginRight: "10px",
-            }}
-            alt="Logo extension Visual Studio Code Live Share"
-          />
+          <div
+            className={`${styles.img_center} ${styles.img_vscode_extension}`}
+          >
+            <Image
+              src="/images/herramientas/vscode/live-share.png"
+              width="60"
+              height="60"
+              alt="Logo extension Visual Studio Code Live Share"
+              loading="lazy"
+            />
+          </div>
           Live Share
         </h4>
         <p>
           Formateador de código estricto. Aplica un estilo coherente analizando
           tu código y siempre todo tu equipo tendrá el mismo estilo de código.
         </p>
-        <img
-          src="/images/herramientas/vscode/live-share.png"
-          style={{
-            display: "block",
-            maxWidth: "300px",
-            margin: "30px auto",
-          }}
-          alt="Caso de uso de la extensión de Visual Studio Code Live Share"
-        />
+        <div className={`${styles.img_center}`}>
+          <Image
+            src="/images/herramientas/vscode/live-share-screenshot.png"
+            width="300"
+            height="120"
+            alt="Caso de uso de la extensión de Visual Studio Code Live Share"
+            loading="lazy"
+          />
+        </div>
       </article>
     </div>
   );
