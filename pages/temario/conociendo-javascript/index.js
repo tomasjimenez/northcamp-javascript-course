@@ -52,7 +52,13 @@ function TemarioConociendoJavaScript() {
           utiliza junto HTML y CSS. JavaScript también lo podemos encontrar en
           el lado del servidor, a través de <strong>NodeJS</strong>.
         </p>
-        <h2 className={styles.subtitle_block}>Un poco de historia</h2>
+        <h2 className={styles.subtitle_block}>
+          <Link href="#">
+            <a id="un-poco-de-historia" className={styles.link_off}>
+              Un poco de historia
+            </a>
+          </Link>
+        </h2>
         <p>
           La historia de JavaScript pasa por hablar de{" "}
           <strong>navegadores</strong>, así que nos vamos a remontar a diciembre
@@ -75,8 +81,8 @@ function TemarioConociendoJavaScript() {
         <p>
           En diciembre de 1991 en Estados Unidos aprueba la{" "}
           <strong>ley de computación de alto desempeño</strong>, donde inyecta
-          capital para extender y se modernizar todo lo relacionado con el
-          estándar WWW (World Wide Web). Gracias a ello, nacen proyectos como{" "}
+          capital para extender y modernizar todo lo relacionado con el estándar
+          WWW (World Wide Web). Gracias a ello, nacen proyectos como{" "}
           <strong>Mosaic</strong> a inicios de 1993, que fue el primer navegador
           web de uso extendido. Mosaic fue desarrollado por{" "}
           <strong>Marc Andreessen</strong> y <strong>Eric Bina</strong>{" "}
@@ -90,7 +96,7 @@ function TemarioConociendoJavaScript() {
           Mosaic. <strong>Netscape</strong> era un navegador gratuito y empezó a
           poder utilizarse en noviembre de 1994 (versión beta 1), la primera
           versión estable se lanzó en diciembre de 1994. Aún no tenemos rastro
-          de JavaScript pero empezamos a tener algo parecido al actual DOM
+          de JavaScript, pero empezamos a tener algo parecido al actual DOM
           (representación de una estructura de nodos de un documento HTML, XHTML
           y XML). Las páginas web eran muy estáticas, y buscaban una solución
           para darle dinamismo a las páginas web. La primera solución que
@@ -100,15 +106,15 @@ function TemarioConociendoJavaScript() {
 
         <p>
           En abril de 1995 Netscape contrató a <strong>Brendan Eich</strong>, se
-          le dió la tarea de crear un prototipo funcional de un lenguaje de
+          le dio la tarea de crear un prototipo funcional de un lenguaje de
           programación que se ejecutara en el navegador, que se pareciera a JAVA
-          y que sólo iba a tener... <strong>10 días</strong> para desarrollarlo.
+          y que splo iba a tener... <strong>10 días</strong> para desarrollarlo.
           Es una proeza hacer algo así en este periodo de tiempo, y así podemos
           entender como JavaScript es un lenguaje un poco "especial".
         </p>
         <p>
           En tan breve periodo, a <strong>Brendan</strong> no le daba tiempo a
-          realizar un lenguaje tan complejo y completo como JAVA, pero si que
+          realizar un lenguaje tan complejo y completo como JAVA, pero sí que
           pudo hacer una{" "}
           <strong>
             herramienta flexible y moldeable al gusto del programador
@@ -129,7 +135,7 @@ function TemarioConociendoJavaScript() {
         <p>
           Al principio JavaScript se llamaba <strong>Mocha</strong>, que
           posteriormente fue renombrado a <strong>LiveScript</strong> por
-          septiembre de 1995, para que finalmente se quedase con el nombre de
+          septiembre de 1995, para que finalmente se quedase con el nombre de{" "}
           <strong>JavaScript</strong> a finales de 1995. En este último cambio,
           es cuando ya se empieza implementar JavaScript en el navegador
           Netscape, ha nacido un lenguaje.
@@ -170,7 +176,7 @@ function TemarioConociendoJavaScript() {
           realmente no llega nunca.
         </p>
         <p>
-          Despues de está época, Windows instala Internet Explorer en su sistema
+          Después de esta época, Windows instala Internet Explorer en su sistema
           operativo por defecto, y se hace con un{" "}
           <strong>92% del mercado</strong>. Haciendo abuso del nicho de mercado,
           Microsoft empieza a hacer JavaScript bajo sus propias reglas, sin
@@ -201,7 +207,7 @@ function TemarioConociendoJavaScript() {
           intentaba unificar el uso de JavaScript de una manera más fácil, pero
           lejos de ello, es una biblioteca que en la actualidad no tiene mucho
           sentido. Con esta biblioteca modificamos el DOM y simplifica la
-          sintáxis de uso para buscar, seleccionar o manipular cualquier
+          sintaxis de uso para buscar, seleccionar o manipular cualquier
           elemento del DOM. Los principios de JQuery son: separación de
           JavaScript y HTML, brevedad y claridad, eliminación de
           incompatibilidad entre navegadores y extensibilidad.
@@ -226,12 +232,12 @@ function TemarioConociendoJavaScript() {
         </p>
         <p>
           También en esta época en diciembre de 2009, nace por fin otro nuevo
-          estándar de <strong>ECMAScript la ES5</strong>, había pasado ya casi
+          estándar de <strong>ECMAScript la ES5</strong>, había pasado ya casi{" "}
           <strong>10 años sin un estándar</strong> y se había implementado cosas
           que se habían pensado para la famosa ES3.1.
         </p>
         <p>
-          Gracias a esta revolución, empiezan a salir en 2010 librerías o
+          Gracias a esta revolución, empiezan a salir en 2010 librerías o{" "}
           <strong>frameworks para JavaScript</strong>, como son{" "}
           <strong>AngularJS</strong> o <strong>BackboneJS</strong>. Empiezan a
           nacer las llamadas <strong>SPA</strong> (Single Page Application),
@@ -266,12 +272,12 @@ function TemarioConociendoJavaScript() {
           para cualquier plataforma de escritorio.
         </p>
         <p>
-          Javascript ha tenido altibajos, y han habido muchos cambios, por
-          suerte cada año sale una nueva especificación de ECMA, donde se añaden
-          nuevas funcionalidades al lenguaje o se añaden mejoras. Es un lenguaje
-          que se ha hecho <strong>muy popular</strong> y que ahora en la
-          actualidad tiene mucha demanda gracias a su rico ecosistema de
-          frameworks y de librerías.
+          Javascript ha tenido altibajos, y ha habido muchos cambios, por suerte
+          cada año sale una nueva especificación de ECMA, donde se añaden nuevas
+          funcionalidades al lenguaje o se añaden mejoras. Es un lenguaje que se
+          ha hecho <strong>muy popular</strong> y que ahora en la actualidad
+          tiene mucha demanda gracias a su rico ecosistema de frameworks y de
+          librerías.
         </p>
         <div className={styles.img_center}>
           <Image
@@ -282,7 +288,13 @@ function TemarioConociendoJavaScript() {
             loading="lazy"
           />
         </div>
-        <h2 className={styles.subtitle_block}>ECMAScript (ES)</h2>
+        <h2 className={styles.subtitle_block}>
+          <Link href="#">
+            <a id="ecmascript" className={styles.link_off}>
+              ECMAScript (ES)
+            </a>
+          </Link>
+        </h2>
         <div className={styles.img_center}>
           <Image
             src="/images/temario/conociendo-javascript/es-ecmascript-logo.jpeg"
@@ -297,185 +309,183 @@ function TemarioConociendoJavaScript() {
           JavaScript, pero hablamos de una <strong>especificación</strong>, que
           nos dice como debe de <strong>funcionar y comportarse</strong> el
           lenguaje. De esta manera, todos los navegadores pueden hacer funcionar
-          un código JavaScript del mismo modo. Aún así, pueden haber partes de
+          un código JavaScript del mismo modo. Aún así, puede haber partes de
           una especificación que no ha sido implementado en algún navegador y
           muchas veces tenemos que tener cuidado en implementar especificaciones
           muy recientes.
         </p>
         <p>
           Como hemos mencionado anteriormente en la historia de los navegadores
-          y JavaScript, han salido distintas versiones de EcmaScript. Vamos a
-          enumerarlos y ver como apodan a cada versión, así veremos, que no
-          coincide con los años de salida (cuidado con esto).
+          y JavaScript, han salido distintas versiones de EcmaScript. Vamos a{" "}
+          <strong>enumerarlos</strong> y ver como apodan a cada versión, así
+          veremos, que no coincide con los años de salida (cuidado con esto).
         </p>
         <h3
           className={`${styles.subsection_block} ${styles.bold_title} ${styles.margin_top}`}
         >
           Versiones de ECMAScript
         </h3>
-        <p>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Edición</th>
-                <th>Publicación</th>
-                <th>Nombre / apodo</th>
-                <th>Cambios</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Jun. 1997</td>
-                <td>
-                  ECMAScript 1997 / <strong>(ES1)</strong>
-                </td>
-                <td>Primera edición</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jun. 1998</td>
-                <td>
-                  ECMAScript 1998 / <strong>(ES2)</strong>
-                </td>
-                <td>Alineación con el estándara internacional ISO/IEC 16262</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Dic. 1999</td>
-                <td>
-                  ECMAScript 1999 / <strong>(ES3)</strong>
-                </td>
-                <td>
-                  Expresiones regulares, mejora de manejo de strings,
-                  try/catch...
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Abandonado</td>
-                <td></td>
-                <td>
-                  Abandonada por falta de acuerdo debido a diferencias políticas
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Dic. 2009</td>
-                <td>
-                  ECMAScript 2009 / <strong>(ES5)</strong>
-                </td>
-                <td>
-                  Modo estricto, comprobación de errores, getters/setters,
-                  JSON...
-                </td>
-              </tr>
-              <tr>
-                <td>5.1</td>
-                <td>Jun. 2011</td>
-                <td>
-                  ECMAScript 2011 / <strong>(ES5.1)</strong>
-                </td>
-                <td>
-                  Alineación con el estándar internacional ISO/IEC 16262:2011
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
+
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Edición</th>
+              <th>Publicación</th>
+              <th>Nombre / apodo</th>
+              <th>Cambios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jun. 1997</td>
+              <td>
+                ECMAScript 1997 / <strong>(ES1)</strong>
+              </td>
+              <td>Primera edición</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jun. 1998</td>
+              <td>
+                ECMAScript 1998 / <strong>(ES2)</strong>
+              </td>
+              <td>Alineación con el estándara internacional ISO/IEC 16262</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Dic. 1999</td>
+              <td>
+                ECMAScript 1999 / <strong>(ES3)</strong>
+              </td>
+              <td>
+                Expresiones regulares, mejora de manejo de strings, try/catch...
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Abandonado</td>
+              <td></td>
+              <td>
+                Abandonada por falta de acuerdo debido a diferencias políticas
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Dic. 2009</td>
+              <td>
+                ECMAScript 2009 / <strong>(ES5)</strong>
+              </td>
+              <td>
+                Modo estricto, comprobación de errores, getters/setters, JSON...
+              </td>
+            </tr>
+            <tr>
+              <td>5.1</td>
+              <td>Jun. 2011</td>
+              <td>
+                ECMAScript 2011 / <strong>(ES5.1)</strong>
+              </td>
+              <td>
+                Alineación con el estándar internacional ISO/IEC 16262:2011
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <p>
           Después del último estándar de diciembre de 2011, los siguientes que
-          se lanzan, van a marcar un antes y un después en el lenguaje. Se va a
-          convertir en un lenguaje más moderno, y desde ese momento hasta hoy,
-          cada año se lanza una nueva especificación.
+          se lanzan, van a <strong>marcar un antes y un después</strong> en el
+          lenguaje. Se va a convertir en un lenguaje más moderno, y desde ese
+          momento hasta hoy, cada año se lanza una nueva especificación.
         </p>
-        <p>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Edición</th>
-                <th>Fecha</th>
-                <th>Nombre / apodo</th>
-                <th>Cambios</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>6</td>
-                <td>Jun. 2015</td>
-                <td>
-                  ECMAScript 2015 / <strong>(ES6 o ES2015)</strong>
-                </td>
-                <td>
-                  Clases, módulos, iteradores for/of, generadores, funciones de
-                  dirección, datos binarios, colecciones, proxies... es conocida
-                  también como "ES6 Harmony"
-                </td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Jun. 2016</td>
-                <td>
-                  ECMAScript 2016 / <strong>(ES7 o ES2016)</strong>
-                </td>
-                <td>
-                  Actualización pequeña de la versión 6, incorpora:
-                  Array.prototype.includes(), operador exponencial (**)
-                </td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Jun. 2017</td>
-                <td>
-                  ECMAScript 2017 / <strong>(ES8 o ES2017)</strong>
-                </td>
-                <td>Async / await</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Jun. 2018</td>
-                <td>
-                  ECMAScript 2018 / <strong>(ES9 o ES2018)</strong>
-                </td>
-                <td>
-                  Rest / Spread operator para variables (...),
-                  Promise.prototype.finally(), iteración asíncrona
-                </td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Jun. 2019</td>
-                <td>
-                  ECMAScript 2019 / <strong>(ES10 o ES2019)</strong>
-                </td>
-                <td>
-                  Array.flat(), Array.flatMap(), String.trimStart(),
-                  String.trimEnd, errores opcionales de bloque con catch...
-                </td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Jun. 2020</td>
-                <td>
-                  ECMAScript 2020 / <strong>(ES11 o ES2020)</strong>
-                </td>
-                <td>
-                  BigInt, operador de unión nula, encadenamiento opcional
-                  (optional chaining ?) y el objeto globalThis
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
+
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Edición</th>
+              <th>Fecha</th>
+              <th>Nombre / apodo</th>
+              <th>Cambios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6</td>
+              <td>Jun. 2015</td>
+              <td>
+                ECMAScript 2015 / <strong>(ES6 o ES2015)</strong>
+              </td>
+              <td>
+                Clases, módulos, iteradores for / of, generadores, funciones de
+                dirección, datos binarios, colecciones, proxies... es conocida
+                también como "ES6 Harmony"
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Jun. 2016</td>
+              <td>
+                ECMAScript 2016 / <strong>(ES7 o ES2016)</strong>
+              </td>
+              <td>
+                Actualización pequeña de la versión 6, incorpora:
+                Array.prototype.includes(), operador exponencial (**)
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Jun. 2017</td>
+              <td>
+                ECMAScript 2017 / <strong>(ES8 o ES2017)</strong>
+              </td>
+              <td>Async / await</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Jun. 2018</td>
+              <td>
+                ECMAScript 2018 / <strong>(ES9 o ES2018)</strong>
+              </td>
+              <td>
+                Rest / Spread operator para variables (...),
+                Promise.prototype.finally(), iteración asíncrona
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Jun. 2019</td>
+              <td>
+                ECMAScript 2019 / <strong>(ES10 o ES2019)</strong>
+              </td>
+              <td>
+                Array.flat(), Array.flatMap(), String.trimStart(),
+                String.trimEnd, errores opcionales de bloque con catch...
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Jun. 2020</td>
+              <td>
+                ECMAScript 2020 / <strong>(ES11 o ES2020)</strong>
+              </td>
+              <td>
+                BigInt, operador de unión nula, encadenamiento opcional
+                (optional chaining ?) y el objeto globalThis
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         <p>
           De esta manera podemos ver que el cambio más radical fue la edición 6
-          (ES6), donde JavaScript dió un gran cambio. A día de hoy, muchas de
-          las cosas lanzadas en esa edición, las usamos en nuestro día a día ya
-          que nos facilita la vida a la hora de programar. A veces entre versión
-          y versión, van adelantando una alguna funcionalidad para ir probando,
-          y muchas de ellas llegan a implementarse. Para ver que funcionalidades
-          hay en cada navegador, podemos consultar la{" "}
+          (ES6), donde JavaScript dio <strong>un gran cambio</strong>. A día de
+          hoy, muchas de las cosas lanzadas en esa edición, las usamos en
+          nuestro día a día, <strong>nos facilita la vida</strong> a la hora de
+          programar. A veces entre versión y versión, van adelantando una alguna
+          funcionalidad para ir probando, y muchas de ellas llegan a
+          implementarse. Para ver que funcionalidades hay en cada navegador,
+          podemos consultar la{" "}
           <Link href="http://kangax.github.io/compat-table/es5/">
             <a className={styles.link_underline} target="_blank">
               tabla de compatibilidad Kangax
@@ -484,15 +494,17 @@ function TemarioConociendoJavaScript() {
           .
         </p>
         <p>
-          A veces entre versión y versión, van adelantando una alguna
-          funcionalidad para ir probando, y muchas de ellas llegan a
-          implementarse. Nos puede sugerir una pregunta, ¿qué funcionalidades
+          Con todo esto, nos puede sugerir una pregunta, ¿qué funcionalidades
           uso?, ¿debo usar la última?, ¿cual es la recomendable?.
         </p>
         <h3
           className={`${styles.subsection_block} ${styles.bold_title} ${styles.margin_top}`}
         >
-          ¿Qué versión de ECMAScript uso?
+          <Link href="#">
+            <a id="que-version-ecmascript-uso" className={styles.link_off}>
+              ¿Qué versión de ECMAScript uso?
+            </a>
+          </Link>
         </h3>
         <p>
           Hemos visto anteriormente que si usamos una funcionalidad en concreto,
@@ -505,6 +517,7 @@ function TemarioConociendoJavaScript() {
           Tenemos varias estrategias para asegurarnos que nuestro código
           funcione correctamente en todos los navegadores:
         </p>
+
         <table className={styles.table}>
           <thead>
             <tr>
@@ -521,7 +534,10 @@ function TemarioConociendoJavaScript() {
               <td>ECMAScript 5</td>
               <td>
                 Es una versión bastante antigua, y lo bueno es que tiene soporte
-                para todos los navegadores de forma nativa.
+                para todos los navegadores de forma nativa, es una versión
+                "segura", pero perdemos ventajas con nuevas funcionalidades.
+                Internet Explorer es compatible con esta versión, con eso lo
+                decimos todo.
               </td>
             </tr>
             <tr>
@@ -534,7 +550,8 @@ function TemarioConociendoJavaScript() {
               <td>
                 Nuestra herramienta elige por nosotros que versión utilizar,
                 esta es una forma cómdoda y rápida de ahorrarnos dolores de
-                cabeza.
+                cabeza. Pero también cremos una dependencia a esta herramienta y
+                podemos heredar como cosas buenas como cosas malas.
               </td>
             </tr>
             <tr>
@@ -543,8 +560,11 @@ function TemarioConociendoJavaScript() {
               </td>
               <td>ECMAScript 6+</td>
               <td>
-                Muy nuevo, pero no garantiza la compatibilidad para los
-                navegadores antiguos.
+                Muy nuevo, no garantiza la compatibilidad para los navegadores
+                antiguos. Es una estrategia que se enfoca sólo desarrollar para
+                las últimas versiones de los navegadores como{" "}
+                <strong>Google Chrome</strong> o{" "}
+                <strong>Mozilla Firefox</strong>
               </td>
             </tr>
             <tr>
@@ -553,8 +573,10 @@ function TemarioConociendoJavaScript() {
               </td>
               <td>ECMAScript 6+</td>
               <td>
-                Convertimos las funcionalidades nuevas a través de lenguaje
-                "antiguo"
+                Utilizamos un transpilador como <strong>Babel</strong> para dar
+                soporte de las nuevas funcionalidades en los nuevos navegadores.
+                Babel traduce todo el código nuevo y lo adapta al código
+                antiguo.
               </td>
             </tr>
           </tbody>

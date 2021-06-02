@@ -69,12 +69,26 @@ export default function ModuleHome() {
         <div className={styles.temary}>
           <ol>
             <li>
-              <Link href="/temario/conociendo-javascript/">
+              <Link href="/temario/conociendo-javascript">
                 Conociendo JavaScript
               </Link>
               <ul>
-                <li>¿Qué es JavaScript?: un poco de historia</li>
-                <li>EcmaScript: las especificaciones de JavaScript</li>
+                <li>
+                  <Link href="/temario/conociendo-javascript/#un-poco-de-historia">
+                    Un poco de historia
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/temario/conociendo-javascript#ecmascript">
+                    ECMAScript (ES)
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href="/temario/conociendo-javascript#que-version-ecmascript-uso">
+                    ¿Qué versión de ECMAScript uso?
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
