@@ -136,6 +136,12 @@
   }
 }
 
+.img_center {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 30px 0 !important;
+}
+
 @media (max-width: 1024px) {
   .container {
     display: flex;

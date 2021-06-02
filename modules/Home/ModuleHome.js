@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../../styles/modules/ModuleHome.module.scss";
@@ -8,8 +9,13 @@ export default function ModuleHome() {
       <div className={styles.left_column}>
         <div className={styles.details_course}>
           <h3 className={styles.course_title}>Docente</h3>
-          <div className={styles.profile_photo}>
-            <img src="images/ficha/mrcodedev.jpg" alt="José Luis García Abad" />
+          <div className={`${styles.profile_photo} ${styles.img_center}`}>
+            <Image
+              src="/images/ficha/mrcodedev.jpg"
+              alt="José Luis García Abad"
+              width="200"
+              height="200"
+            />
           </div>
           <div className={styles.profile_name}>José Luis García Abad</div>
           <div className={styles.position}>Frontend Developer en Altafonte</div>

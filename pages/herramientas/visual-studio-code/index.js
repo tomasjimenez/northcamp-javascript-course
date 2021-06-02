@@ -19,7 +19,7 @@ function HerramientasVisualStudioCode() {
         <h2 className={styles.title_block}>Visual Studio Code</h2>
         <div className={styles.img_center}>
           <Image
-            src="/images/herramientas/vscode/vscode.webp"
+            src="/images/herramientas/vscode/vscode.png"
             width="200"
             height="200"
             alt="Logo Visual Studio Code"
