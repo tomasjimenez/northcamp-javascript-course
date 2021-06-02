@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 
@@ -15,15 +17,15 @@ function HerramientasGit() {
     <div className={styles.container}>
       <article>
         <h2 className={styles.title_block}>Git</h2>
-        <img
-          src="/images/herramientas/git/git-logo.png"
-          style={{
-            maxWidth: "300px",
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Logo Git"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/git/git-logo.png"
+            width="300"
+            height="120"
+            alt="Logo Git"
+            loading="lazy"
+          />
+        </div>
         <p>
           <strong>Git</strong> es un software de control de versiones diseñado
           por <strong>Linus Torvalds</strong> (el padre del Kernel de Linux),
@@ -52,29 +54,35 @@ function HerramientasGit() {
           versión 2 de la Licencia Pública General de GNU.
         </p>
         <h3 className={styles.subtitle_block}>Instalación</h3>
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           🪟 Windows
         </h4>
         <p>
           Para <strong>instalar Git</strong> en Windows, es tan simple como ir a
           la página oficial de Git, a través de este{" "}
-          <a href="https://git-scm.com/" target="_blank">
-            <span style={{ textDecoration: "underline" }}>enlace</span>
-          </a>
+          <Link href="https://git-scm.com/">
+            <a style={{ textDecoration: "underline" }} target="_blank">
+              enlace
+            </a>
+          </Link>
           . Una vez descargado, lo ejecutaremos y seguiremos la instrucciones.
           Muy recomendable instalar la consola de Git, y utilizar desde ahí{" "}
           <strong>Git</strong>.
-          <img
-            src="/images/herramientas/git/git-download.png"
-            style={{
-              maxWidth: "800px",
-              display: "block",
-              margin: "30px auto",
-            }}
-            alt="Screenshot instalar Git en Windows"
-          />
+          <div className={styles.img_center}>
+            <Image
+              src="/images/herramientas/git/git-download.jpeg"
+              width="1000"
+              height="880"
+              alt="Screenshot instalar Git en Windows"
+              loading="lazy"
+            />
+          </div>
         </p>
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           🍎 Mac
         </h4>
         Enhorabuena, si posees un mac, ya tienes instalado <strong>Git</strong>{" "}
