@@ -6,6 +6,7 @@ import SectionCourse from "../../components/SectionCourse/SectionCourse";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 
+//Refactor index home here as block module
 export default function ModuleBlock({ ComponentToRender, title, back, next }) {
   return (
     <div className={styles.container}>

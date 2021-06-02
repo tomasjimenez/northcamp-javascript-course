@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 
@@ -15,19 +17,15 @@ function HerramientasNodeJS() {
     <div className={styles.container}>
       <article>
         <h2 className={styles.title_block}>NodeJS</h2>
-        <img
-          src="/images/herramientas/nodejs/nodejs-logo.png"
-          width="200"
-          height="200"
-          style={{
-            width: "100%",
-            maxWidth: "400px",
-
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Logo NodeJS"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/nodejs/nodejs-logo.png"
+            width="400"
+            height="200"
+            alt="Logo NodeJS"
+            loading="lazy"
+          />
+        </div>
         <p>
           <strong>Node.js</strong> es un entorno en tiempo de ejecución
           multiplataforma, de código abierto, para la capa del servidor (pero no
@@ -52,15 +50,19 @@ function HerramientasNodeJS() {
         </p>
 
         <h3 className={styles.subtitle_block}>Instalación</h3>
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           🪟 Windows
         </h4>
         <p>
           Para <strong>instalar NodeJS</strong> debemos de irnos a su web de
           descarga a través de este{" "}
-          <a href="https://nodejs.org/es/" target="_blank">
-            <span style={{ textDecoration: "underline" }}>enlace</span>
-          </a>
+          <Link href="https://nodejs.org/es/">
+            <a style={{ textDecoration: "underline" }} target="_blank">
+              enlace
+            </a>
+          </Link>
           .
         </p>
         <p>
@@ -69,16 +71,18 @@ function HerramientasNodeJS() {
           dar problemas al tener nuevas características que no está soportadas
           aún por la gran mayoría.
         </p>
-        <img
-          src="/images/herramientas/nodejs/nodejs-download.png"
-          style={{
-            maxWidth: "800px",
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Screenshot de descarga NodeJS"
-        />
-        <h4 className={`${styles.subsection_block} ${styles.with_icon}`}>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/nodejs/nodejs-download.jpeg"
+            width="1200"
+            height="550"
+            alt="Screenshot de descarga NodeJS"
+            loading="lazy"
+          />
+        </div>
+        <h4
+          className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
+        >
           🍎 Mac
         </h4>
         <p>
@@ -86,20 +90,22 @@ function HerramientasNodeJS() {
           <strong>NodeJS</strong>, es a través de la herramienta de{" "}
           <strong>Homebrew</strong>. Podéis seguir las instrucciones para
           instalar Homebrew en su web, en el siguiente{" "}
-          <a href="https://brew.sh/index_es.html" target="_blank">
-            <span style={{ textDecoration: "underline" }}>enlace</span>
-          </a>
+          <Link href="https://brew.sh/index_es.html">
+            <a style={{ textDecoration: "underline" }} target="_blank">
+              enlace
+            </a>
+          </Link>
           .
         </p>
-        <img
-          src="/images/herramientas/nodejs/nodejs-homebrew.png"
-          style={{
-            maxWidth: "800px",
-            display: "block",
-            margin: "30px auto",
-          }}
-          alt="Screenshot instalar Homebrew en mac"
-        />
+        <div className={styles.img_center}>
+          <Image
+            src="/images/herramientas/nodejs/nodejs-homebrew.jpeg"
+            width="800"
+            height="160"
+            alt="Screenshot de descarga Homebrew"
+            loading="lazy"
+          />
+        </div>
         <p>
           Una vez instalado <strong>Homebrew</strong>, sólo tendremos que irnos
           a nuestra terminal y poner "brew install node". Una vez ejecutado este
