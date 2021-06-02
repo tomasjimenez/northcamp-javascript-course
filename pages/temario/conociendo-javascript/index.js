@@ -1,6 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
-import Image from "next/image";
 
 export default function ConociendoJavascript() {
   return (
@@ -64,9 +65,9 @@ function TemarioConociendoJavaScript() {
         </p>
         <div className={styles.img_center}>
           <Image
-            src="/images/temario/conociendo-javascript/worldwideweb.gif"
-            width="1100"
-            height="664"
+            src="/images/temario/conociendo-javascript/worldwideweb.jpeg"
+            width="800"
+            height="464"
             alt="Captura de pantalla de WorldWideWeb de 1993"
             loading="lazy"
           />
@@ -106,35 +107,51 @@ function TemarioConociendoJavaScript() {
           entender como JavaScript es un lenguaje un poco "especial".
         </p>
         <p>
-          En tan breve periodo, a Brendan no le daba tiempo a realizar un
-          lenguaje tan complejo y completo como JAVA, pero si que pudo hacer una
-          herramienta flexible y moldeable al gusto del programador. Su sintáxis
-          se parece a JAVA (llaves, paréntesis, puntos y comas...) y coge cosas
-          de otros lenguajes de programación, como el tipado dinámico de Lisp o
-          la herencia basada en prototipos de Self.
+          En tan breve periodo, a <strong>Brendan</strong> no le daba tiempo a
+          realizar un lenguaje tan complejo y completo como JAVA, pero si que
+          pudo hacer una{" "}
+          <strong>
+            herramienta flexible y moldeable al gusto del programador
+          </strong>
+          . Su sintáxis se parece a JAVA (llaves, paréntesis, puntos y comas...)
+          y coge cosas de otros lenguajes de programación, como el tipado
+          dinámico de Lisp o la herencia basada en prototipos de Self.
         </p>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/brendan-eich.jpeg"
+            width="400"
+            height="400"
+            alt="Brendan Eich"
+            loading="lazy"
+          />
+        </div>
         <p>
-          Al principio JavaScript se llamaba Mocha, que posteriormente fue
-          renombrado a LiveScript por septiembre de 1995, para que finalmente se
-          quedase con el nombre de JavaScript a finales de 1995. En este último
-          cambio, es cuando ya se empieza implementar JavaScript en el navegador
+          Al principio JavaScript se llamaba <strong>Mocha</strong>, que
+          posteriormente fue renombrado a <strong>LiveScript</strong> por
+          septiembre de 1995, para que finalmente se quedase con el nombre de
+          <strong>JavaScript</strong> a finales de 1995. En este último cambio,
+          es cuando ya se empieza implementar JavaScript en el navegador
           Netscape, ha nacido un lenguaje.
         </p>
         <p>
-          Microsoft saca una versión propia de JavaScript llamada JScript en
-          agosto de 1996, implementándolo a Internet Explorer. Eran versiones
-          completamente compatibles (Netscape y IE), pero se tenía miedo a que
-          cada uno hiciera un lenguaje totalmente diferente. Gracias a ello en
-          1996 nace el W3C (World Wide Web Consortium) y crea el estándar del
-          DOM. Por su parte ECMA crea el primer estándar en junio de 1997 para
-          JavaScript, llamado ECMA-262 o también llamada ECMAScript. En junio de
-          1998 sale la versión 2 (ES2) de la especificación y en diciembre de
-          1999 sale la versión 3 (ES3), con: expresiones regulares, mejora de
-          manejo de strings, try/catch, etc.
+          Microsoft saca una versión propia de JavaScript llamada{" "}
+          <strong>JScript</strong> en agosto de 1996, implementándolo a Internet
+          Explorer. Eran versiones completamente compatibles (Netscape y IE),
+          pero se tenía miedo a que cada uno hiciera un lenguaje totalmente
+          diferente. Gracias a ello en 1996 nace el <strong>W3C</strong> (World
+          Wide Web Consortium) y crea el estándar del DOM. Por su parte{" "}
+          <strong>ECMA</strong> crea el primer estándar en junio de 1997 para
+          JavaScript, llamado <strong>ECMA-262</strong> o también llamada{" "}
+          <strong>ECMAScript</strong>. En junio de 1998 sale la versión 2 (ES2)
+          de la especificación y en diciembre de 1999 sale la versión 3 (ES3),
+          con: expresiones regulares, mejora de manejo de strings, try/catch,
+          etc.
         </p>
         <p>
-          JavaScript ya empieza a estar estandarizado y saca músculo, pero
-          comienza un declive en el mundo tecnológico que afectara al lenguaje.
+          JavaScript ya empieza a estar <strong>estandarizado</strong> y saca
+          músculo, pero comienza un declive en el mundo tecnológico que afectara
+          al lenguaje.
         </p>
         <p>
           A partir del 2000 en Estados Unidos, a causa de los atentados del 11S,
@@ -142,190 +159,407 @@ function TemarioConociendoJavaScript() {
           tecnologías y por eso muchas empresas tecnológicas (las llamadas .com)
           quiebran o son adquiridas por otras. Netscape fue adquirida por AOL, y
           esto le da mucho peso a Microsoft con su navegador Internet Explorer,
-          haciéndose dueño del mercado y sin ninguna oposición de otra empresa.
+          haciéndose <strong>dueño del mercado</strong> y sin ninguna oposición
+          de otra empresa.
         </p>
         <p>
           En 2001 se tenía que lanzar la versión ECMAScript 4 (ES4), pero debido
           a diferencias políticas en la complejidad del lenguaje, Yahoo y
-          Microsoft deciden abandonar la nueva edición. Se intenta hacer una
-          versión ES3.1 para mejorar el lenguaje, pero realmente no llega nunca.
+          Microsoft <strong>deciden abandonar la nueva edición</strong>. Se
+          intenta hacer una versión ES3.1 para mejorar el lenguaje, pero
+          realmente no llega nunca.
         </p>
         <p>
           Despues de está época, Windows instala Internet Explorer en su sistema
-          operativo por defecto, y se hace con un 92% del mercado. Haciendo
-          abuso del nicho de mercado, Microsoft empieza a hacer JavaScript bajo
-          sus propias reglas, sin llegar a consensos con nadie más. El resto de
-          fabricantes hacían lo que querían: unos seguían a Microsoft, otros
-          seguían a ECMA y otros hacían sus aportes propios, llega el caos a los
-          desarrolladores.
+          operativo por defecto, y se hace con un{" "}
+          <strong>92% del mercado</strong>. Haciendo abuso del nicho de mercado,
+          Microsoft empieza a hacer JavaScript bajo sus propias reglas, sin
+          llegar a consensos con nadie más. El resto de fabricantes hacían lo
+          que querían: unos seguían a Microsoft, otros seguían a ECMA y otros
+          hacían sus aportes propios,{" "}
+          <strong>llega el caos a los desarrolladores</strong>.
         </p>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/internet-explorer.jpeg"
+            width="400"
+            height="400"
+            alt="Meme Internet Explorer"
+            loading="lazy"
+          />
+        </div>
         <p>
           Las conexiones a internet mejoran y estaba el problema de incorporar
           contenido multimedia a las páginas web. Todo el mundo hacía lo que
-          quería y bajo ese contexto, nace Flash, nos brindaba una solución para
-          poder ver vídeos o escuchar audios. Era una tecnología pesada y con
-          muchos problemas.
+          quería y bajo ese contexto, nace <strong>Flash</strong>, nos brindaba
+          una solución para poder ver vídeos o escuchar audios. Era una
+          tecnología pesada y con muchos problemas.
         </p>
         <p>
-          En agosto de 2006 nace JQuery a manos John Resig, una biblioteca de
-          JavaScript que intentaba unificar el uso de JavaScript de una manera
-          más fácil, pero lejos de ello, es una biblioteca que en la actualidad
-          no tiene mucho sentido. Con esta biblioteca modificamos el DOM y
-          simplifica la sintáxis de uso para buscar, seleccionar o manipular
-          cualquier elemento del DOM. Los principios de JQuery son: separación
-          de JavaScript y HTML, brevedad y claridad, eliminación de
+          En agosto de 2006 nace <strong>JQuery</strong> a manos{" "}
+          <strong>John Resig</strong>, una biblioteca de JavaScript que
+          intentaba unificar el uso de JavaScript de una manera más fácil, pero
+          lejos de ello, es una biblioteca que en la actualidad no tiene mucho
+          sentido. Con esta biblioteca modificamos el DOM y simplifica la
+          sintáxis de uso para buscar, seleccionar o manipular cualquier
+          elemento del DOM. Los principios de JQuery son: separación de
+          JavaScript y HTML, brevedad y claridad, eliminación de
           incompatibilidad entre navegadores y extensibilidad.
         </p>
         <p>
-          Google en septiembre de 2008 lanza su propio navegador web, llamado
-          Google Chrome. Chrome crea un motor de código abierto para JavaScript
-          y WebAssembly. Gracias a esta creación, va a abrir un nuevo camino
-          para que JavaScript tome el peso que se merece y vuelva a ser un
-          lenguaje relevante dentro del mundo del desarrollo.
+          Google en septiembre de 2008 lanza su propio navegador web, llamado{" "}
+          <strong>Google Chrome</strong>. Chrome crea un motor de código abierto
+          para JavaScript y WebAssembly que le ponen nombre de{" "}
+          <strong>V8</strong>. Gracias a esta creación, va a abrir un nuevo
+          camino para que JavaScript tome el peso que se merece y vuelva a ser
+          un <strong>lenguaje relevante</strong> dentro del mundo del
+          desarrollo.
         </p>
         <p>
           En mayo de 2009 el mundo de JavaScript empieza a tener una gran
           revolución: JavaScript siempre se había ejecutado en el navegador,
           pero ahora habían logrado (hubo otros intentos sin mucho éxito)
           ejecutarlo fuera del navegador, usando el exitoso motor de Google
-          Chrome V8. Gracias a esto nace NodeJS de la mano de Ryan Dahl,
-          podíamos correr JavaScript donde quisiéramos.
+          Chrome V8. Gracias a esto nace <strong>NodeJS</strong> de la mano de{" "}
+          <strong>Ryan Dahl</strong>, podíamos correr JavaScript donde
+          quisiéramos.
         </p>
         <p>
           También en esta época en diciembre de 2009, nace por fin otro nuevo
-          estándar de ECMAScript la ES5, había pasado ya casi 10 años sin un
-          estándar y se había implementado cosas que se habían pensado para la
-          famosa ES3.1.
+          estándar de <strong>ECMAScript la ES5</strong>, había pasado ya casi
+          <strong>10 años sin un estándar</strong> y se había implementado cosas
+          que se habían pensado para la famosa ES3.1.
         </p>
         <p>
           Gracias a esta revolución, empiezan a salir en 2010 librerías o
-          frameworks para JavaScript, como son AngularJS o BackboneJS. Empiezan
-          a nacer las llamadas SPA (Single Page Application), aplicaciones web
-          donde todas las pantallas las muestra la misma página, sin recarga
-          alguna del navegador.
+          <strong>frameworks para JavaScript</strong>, como son{" "}
+          <strong>AngularJS</strong> o <strong>BackboneJS</strong>. Empiezan a
+          nacer las llamadas <strong>SPA</strong> (Single Page Application),
+          aplicaciones web donde todas las pantallas las muestra la misma
+          página, sin recarga alguna del navegador.
         </p>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/frameworks-js.png"
+            width="700"
+            height="350"
+            alt="Logos frameworks JavaScript"
+            loading="lazy"
+          />
+        </div>
         <p>
           Tras estas primeras librerías o frameworks, nacen muchos más, y nacen
-          como "setas". En mayo de 2013 nace ReactJS de la mano de Jordan Walke,
-          trabajador de Facebook, y en febrero del 2014 Evan You, un ex
-          trabajador de Google libera una librería llamada VueJS.
+          como "setas". En mayo de 2013 nace <strong>ReactJS</strong> de la mano
+          de <strong>Jordan Walke</strong>, trabajador de Facebook, y en febrero
+          del 2014 <strong>Evan You</strong>, un ex trabajador de Google libera
+          una librería llamada <strong>VueJS</strong>.
         </p>
         <p>
           Tras este boom de librerías y frameworks, hubo una gran demanda de
-          realizar aplicaciones para móviles y de ahí nació PhoneGap y también
-          Ionic. Estas dos corrían JavaScript y hacían aplicaciones híbridas,
-          que podían usarse tanto en móviles como en ordenadores. También había
-          demanda de realizar aplicaciones de escritorio multiplataforma, y en
-          2013 nace Electron (Visual Studio Code o Spotify corren en Electron)
-          que permite desarrollar aplicaciones gráficas de escritorio para
-          cualquier plataforma de escritorio.
+          realizar aplicaciones para móviles y de ahí nació{" "}
+          <strong>PhoneGap</strong> y también <strong>Ionic</strong>. Estas dos
+          corrían JavaScript y hacían aplicaciones híbridas, que podían usarse
+          tanto en móviles como en ordenadores. También había demanda de
+          realizar aplicaciones de escritorio multiplataforma, y en 2013 nace{" "}
+          <strong>Electron</strong> (Visual Studio Code o Spotify corren en{" "}
+          Electron) que permite desarrollar aplicaciones gráficas de escritorio
+          para cualquier plataforma de escritorio.
         </p>
         <p>
           Javascript ha tenido altibajos, y han habido muchos cambios, por
           suerte cada año sale una nueva especificación de ECMA, donde se añaden
           nuevas funcionalidades al lenguaje o se añaden mejoras. Es un lenguaje
-          que se ha hecho muy popular y que ahora en la actualidad tiene mucha
-          demanda.
+          que se ha hecho <strong>muy popular</strong> y que ahora en la
+          actualidad tiene mucha demanda gracias a su rico ecosistema de
+          frameworks y de librerías.
         </p>
-        <h2 className={styles.subtitle_block}>ECMAScript</h2>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/meme-javascript.png"
+            width="500"
+            height="750"
+            alt="Meme JavaScript"
+            loading="lazy"
+          />
+        </div>
+        <h2 className={styles.subtitle_block}>ECMAScript (ES)</h2>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/conociendo-javascript/es-ecmascript-logo.jpeg"
+            width="200"
+            height="200"
+            alt="Logo EcmaScript"
+            loading="lazy"
+          />
+        </div>
         <p>
-          Cuando hablamos de <strong>ECMAScript</strong> siempre hablamos de
-          JavaScript, es un estándar para unificar el lenguaje en todos los
-          navegadores, así pues Firefox y Chrome puedan ejecutar JavaScript de
-          la misma manera.
-        </p>
-        <h3 className={styles.subtitle_block}>Subtítulo</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <h4 className={styles.subsection_block}>Subsección</h4>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Cuando hablamos de <strong>ECMAScript (ES)</strong> hablamos de
+          JavaScript, pero hablamos de una <strong>especificación</strong>, que
+          nos dice como debe de <strong>funcionar y comportarse</strong> el
+          lenguaje. De esta manera, todos los navegadores pueden hacer funcionar
+          un código JavaScript del mismo modo. Aún así, pueden haber partes de
+          una especificación que no ha sido implementado en algún navegador y
+          muchas veces tenemos que tener cuidado en implementar especificaciones
+          muy recientes.
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Como hemos mencionado anteriormente en la historia de los navegadores
+          y JavaScript, han salido distintas versiones de EcmaScript. Vamos a
+          enumerarlos y ver como apodan a cada versión, así veremos, que no
+          coincide con los años de salida (cuidado con esto).
+        </p>
+        <h3
+          className={`${styles.subsection_block} ${styles.bold_title} ${styles.margin_top}`}
+        >
+          Versiones de ECMAScript
+        </h3>
+        <p>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Edición</th>
+                <th>Publicación</th>
+                <th>Nombre / apodo</th>
+                <th>Cambios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jun. 1997</td>
+                <td>
+                  ECMAScript 1997 / <strong>(ES1)</strong>
+                </td>
+                <td>Primera edición</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jun. 1998</td>
+                <td>
+                  ECMAScript 1998 / <strong>(ES2)</strong>
+                </td>
+                <td>Alineación con el estándara internacional ISO/IEC 16262</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Dic. 1999</td>
+                <td>
+                  ECMAScript 1999 / <strong>(ES3)</strong>
+                </td>
+                <td>
+                  Expresiones regulares, mejora de manejo de strings,
+                  try/catch...
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Abandonado</td>
+                <td></td>
+                <td>
+                  Abandonada por falta de acuerdo debido a diferencias políticas
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Dic. 2009</td>
+                <td>
+                  ECMAScript 2009 / <strong>(ES5)</strong>
+                </td>
+                <td>
+                  Modo estricto, comprobación de errores, getters/setters,
+                  JSON...
+                </td>
+              </tr>
+              <tr>
+                <td>5.1</td>
+                <td>Jun. 2011</td>
+                <td>
+                  ECMAScript 2011 / <strong>(ES5.1)</strong>
+                </td>
+                <td>
+                  Alineación con el estándar internacional ISO/IEC 16262:2011
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+
+        <p>
+          Después del último estándar de diciembre de 2011, los siguientes que
+          se lanzan, van a marcar un antes y un después en el lenguaje. Se va a
+          convertir en un lenguaje más moderno, y desde ese momento hasta hoy,
+          cada año se lanza una nueva especificación.
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Edición</th>
+                <th>Fecha</th>
+                <th>Nombre / apodo</th>
+                <th>Cambios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6</td>
+                <td>Jun. 2015</td>
+                <td>
+                  ECMAScript 2015 / <strong>(ES6 o ES2015)</strong>
+                </td>
+                <td>
+                  Clases, módulos, iteradores for/of, generadores, funciones de
+                  dirección, datos binarios, colecciones, proxies... es conocida
+                  también como "ES6 Harmony"
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Jun. 2016</td>
+                <td>
+                  ECMAScript 2016 / <strong>(ES7 o ES2016)</strong>
+                </td>
+                <td>
+                  Actualización pequeña de la versión 6, incorpora:
+                  Array.prototype.includes(), operador exponencial (**)
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Jun. 2017</td>
+                <td>
+                  ECMAScript 2017 / <strong>(ES8 o ES2017)</strong>
+                </td>
+                <td>Async / await</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Jun. 2018</td>
+                <td>
+                  ECMAScript 2018 / <strong>(ES9 o ES2018)</strong>
+                </td>
+                <td>
+                  Rest / Spread operator para variables (...),
+                  Promise.prototype.finally(), iteración asíncrona
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Jun. 2019</td>
+                <td>
+                  ECMAScript 2019 / <strong>(ES10 o ES2019)</strong>
+                </td>
+                <td>
+                  Array.flat(), Array.flatMap(), String.trimStart(),
+                  String.trimEnd, errores opcionales de bloque con catch...
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Jun. 2020</td>
+                <td>
+                  ECMAScript 2020 / <strong>(ES11 o ES2020)</strong>
+                </td>
+                <td>
+                  BigInt, operador de unión nula, encadenamiento opcional
+                  (optional chaining ?) y el objeto globalThis
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          De esta manera podemos ver que el cambio más radical fue la edición 6
+          (ES6), donde JavaScript dió un gran cambio. A día de hoy, muchas de
+          las cosas lanzadas en esa edición, las usamos en nuestro día a día ya
+          que nos facilita la vida a la hora de programar. A veces entre versión
+          y versión, van adelantando una alguna funcionalidad para ir probando,
+          y muchas de ellas llegan a implementarse. Para ver que funcionalidades
+          hay en cada navegador, podemos consultar la{" "}
+          <Link href="http://kangax.github.io/compat-table/es5/">
+            <a className={styles.link_underline} target="_blank">
+              tabla de compatibilidad Kangax
+            </a>
+          </Link>
+          .
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          A veces entre versión y versión, van adelantando una alguna
+          funcionalidad para ir probando, y muchas de ellas llegan a
+          implementarse. Nos puede sugerir una pregunta, ¿qué funcionalidades
+          uso?, ¿debo usar la última?, ¿cual es la recomendable?.
+        </p>
+        <h3
+          className={`${styles.subsection_block} ${styles.bold_title} ${styles.margin_top}`}
+        >
+          ¿Qué versión de ECMAScript uso?
+        </h3>
+        <p>
+          Hemos visto anteriormente que si usamos una funcionalidad en concreto,
+          a lo mejor nuestro código no podría ser interpretado bien por el
+          navegador. Por lo general se suele usar usar como referencia{" "}
+          <strong>ES6 / ES2016</strong>, pero podríamos perder muchas
+          funcionalidades por el camino, ¿qué hacemos?.
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Tenemos varias estrategias para asegurarnos que nuestro código
+          funcione correctamente en todos los navegadores:
         </p>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Estrategia</th>
+              <th>Versión de ES</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Conservadora</strong>
+              </td>
+              <td>ECMAScript 5</td>
+              <td>
+                Es una versión bastante antigua, y lo bueno es que tiene soporte
+                para todos los navegadores de forma nativa.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Delegadora</strong>
+              </td>
+              <td>
+                <em>Según librería o framework</em>
+              </td>
+              <td>
+                Nuestra herramienta elige por nosotros que versión utilizar,
+                esta es una forma cómdoda y rápida de ahorrarnos dolores de
+                cabeza.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Evergreen</strong>
+              </td>
+              <td>ECMAScript 6+</td>
+              <td>
+                Muy nuevo, pero no garantiza la compatibilidad para los
+                navegadores antiguos.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Transpiladora</strong>
+              </td>
+              <td>ECMAScript 6+</td>
+              <td>
+                Convertimos las funcionalidades nuevas a través de lenguaje
+                "antiguo"
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </article>
-      <div>FUENTES: https://www.youtube.com/watch?v=0b7wyn9UWpE</div>
     </div>
   );
 }
