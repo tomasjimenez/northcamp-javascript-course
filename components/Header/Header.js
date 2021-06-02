@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../../styles/components/Header.module.scss";
 
 export default function Header() {
@@ -8,7 +8,13 @@ export default function Header() {
       <div className={styles.header__logo}>
         <Link href="/">
           <a>
-            <img src="/images/logo/logo-northcamp.png" />
+            <Image
+              src="/images/logo/logo-northcamp.png"
+              width="80"
+              height="60"
+              alt="Logo Northcamp School"
+              loading="lazy"
+            />
           </a>
         </Link>
       </div>
