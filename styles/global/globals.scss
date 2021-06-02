@@ -28,6 +28,7 @@ a {
   text-decoration: none;
   color: inherit;
   &:hover {
+    color: rgba(1, 167, 132, 1);
     text-decoration: underline;
   }
 }

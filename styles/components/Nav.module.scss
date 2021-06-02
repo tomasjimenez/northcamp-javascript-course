@@ -72,6 +72,12 @@
   display: none;
 }
 
+.nav_link {
+  &:hover {
+    color: white;
+  }
+}
+
 @media (max-width: 1400px) {
   .wrapper_nav {
     width: 100%;

@@ -43,17 +43,23 @@ export default function ModuleHome() {
           <h3 className={styles.course_title}>Herramientas</h3>
           <div className={styles.app_tools}>
             <Link href="/herramientas/visual-studio-code/">
-              Visual Studio Code
+              <a className={styles.link_underline}>Visual Studio Code</a>
             </Link>
           </div>
           <div className={styles.app_tools}>
-            <Link href="/herramientas/node-js/">NodeJS</Link>
+            <Link href="/herramientas/node-js/">
+              <a className={styles.link_underline}>NodeJS</a>
+            </Link>
           </div>
           <div className={styles.app_tools}>
-            <Link href="/herramientas/git/">Git</Link>
+            <Link href="/herramientas/git/">
+              <a className={styles.link_underline}>Git</a>
+            </Link>
           </div>
           <div className={styles.app_tools}>
-            <Link href="/herramientas/run-js/">RunJS</Link>
+            <Link href="/herramientas/run-js/">
+              <a className={styles.link_underline}>RunJS</a>
+            </Link>
           </div>
         </div>
       </div>

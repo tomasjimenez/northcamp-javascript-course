@@ -136,6 +136,14 @@
   }
 }
 
+.link_underline {
+  text-decoration: underline;
+  &:hover {
+    color: rgba(1, 167, 132, 1);
+    text-decoration: none;
+  }
+}
+
 .img_center {
   display: flex !important;
   justify-content: center !important;

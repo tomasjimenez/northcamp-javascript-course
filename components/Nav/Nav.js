@@ -10,7 +10,7 @@ export default function Nav({ title, back, next }) {
             {back?.link && (
               <div className={styles.nav_button_info}>
                 <Link href={back.link}>
-                  <a>
+                  <a className={styles.nav_link}>
                     <i className={`${styles.arrow} ${styles.left}`} />
                     Atrás
                     <div className={styles.title_link}>{back.title}</div>
@@ -23,7 +23,7 @@ export default function Nav({ title, back, next }) {
             {next?.link && (
               <div className={styles.nav_button_info}>
                 <Link href={next.link} className={styles.pruebas}>
-                  <a>
+                  <a className={styles.nav_link}>
                     Siguiente
                     <i className={`${styles.arrow} ${styles.right}`} />
                     <div className={styles.title_link}>{next.title}</div>

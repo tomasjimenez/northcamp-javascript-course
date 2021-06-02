@@ -46,6 +46,14 @@
   margin: 0px 12px 0px 0px;
 }
 
+.link_underline {
+  text-decoration: underline;
+  &:hover {
+    color: rgba(1, 167, 132, 1);
+    text-decoration: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 1396px;

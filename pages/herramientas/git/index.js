@@ -53,7 +53,7 @@ function HerramientasGit() {
           autor Git es un software libre distribuible bajo los términos de la
           versión 2 de la Licencia Pública General de GNU.
         </p>
-        <h3 className={styles.subtitle_block}>Instalación</h3>
+        <h3 className={styles.subtitle_block}>🚀 Instalación</h3>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
@@ -63,7 +63,7 @@ function HerramientasGit() {
           Para <strong>instalar Git</strong> en Windows, es tan simple como ir a
           la página oficial de Git, a través de este{" "}
           <Link href="https://git-scm.com/">
-            <a style={{ textDecoration: "underline" }} target="_blank">
+            <a className={styles.link_underline} target="_blank">
               enlace
             </a>
           </Link>

@@ -69,7 +69,7 @@ function HerramientasVisualStudioCode() {
           Para instalar <strong>Visual Studio Code</strong>, debemos de acceder
           a este{" "}
           <Link href="https://code.visualstudio.com/download">
-            <a style={{ textDecoration: "underline" }} target="_blank">
+            <a className={styles.link_underline} target="_blank">
               enlace
             </a>
           </Link>

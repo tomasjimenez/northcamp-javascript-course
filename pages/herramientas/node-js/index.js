@@ -49,7 +49,7 @@ function HerramientasNodeJS() {
           tanto aumentando su velocidad
         </p>
 
-        <h3 className={styles.subtitle_block}>Instalación</h3>
+        <h3 className={styles.subtitle_block}>🚀 Instalación</h3>
         <h4
           className={`${styles.subsection_block} ${styles.with_icon} ${styles.bold_title}`}
         >
@@ -59,7 +59,7 @@ function HerramientasNodeJS() {
           Para <strong>instalar NodeJS</strong> debemos de irnos a su web de
           descarga a través de este{" "}
           <Link href="https://nodejs.org/es/">
-            <a style={{ textDecoration: "underline" }} target="_blank">
+            <a className={styles.link_underline} target="_blank">
               enlace
             </a>
           </Link>
@@ -91,7 +91,7 @@ function HerramientasNodeJS() {
           <strong>Homebrew</strong>. Podéis seguir las instrucciones para
           instalar Homebrew en su web, en el siguiente{" "}
           <Link href="https://brew.sh/index_es.html">
-            <a style={{ textDecoration: "underline" }} target="_blank">
+            <a className={styles.link_underline} target="_blank">
               enlace
             </a>
           </Link>
