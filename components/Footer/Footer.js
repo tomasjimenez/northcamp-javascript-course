@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
 import styles from "../../styles/components/Footer.module.scss";
 
 export default function Footer() {
