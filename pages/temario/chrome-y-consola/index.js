@@ -20,6 +20,8 @@ export default function ChromeConsola() {
 }
 
 const holaMundoPrism = `console.log("hola mundo!");`;
+const sytlesInConsole = `console.log("%cNorthCampSchool", 
+"padding: 10px; background-color: #01a784; color: #FFF; font-weight: bold;");`;
 
 function TemarioChromeConsola() {
   return (
@@ -69,11 +71,11 @@ function TemarioChromeConsola() {
           />
         </div>
         <p>
-          En la pestaña de consola, podremos escribir lo que queramos, pero
-          siempre en lenguaje JavaScript. Podemos escribir lo que queramos en
-          JavaScript, ejecutar trozos de código o manipular archivos de nuestro
-          DOM en vivo. Esto nos da un poder muy grande para poder debuggear, y
-          debemos de saber utilizar bien esta herramienta.
+          En la pestaña de consola, podremos escribir lo que nos plazca, pero
+          siempre en lenguaje JavaScript, nos puede ser muy útil para ejecutar
+          trozos de código o manipular archivos de nuestro DOM en vivo. Esto nos
+          da un poder muy grande para poder debuggear, y debemos de saber
+          utilizar bien esta herramienta.
         </p>
         <p>
           Vamos con nuestro primer "hola mundo", va a ser una forma muy sencilla
@@ -98,6 +100,168 @@ function TemarioChromeConsola() {
           brindan los navegadores, ya que nos da mucha más información y vamos a
           poder ver en todo momento que pasos sigue nuestra aplicación.
         </p>
+        <p>
+          Mucha gente desconoce que el objeto <strong>console</strong> tiene más
+          métodos, y muchos pueden ser muy útiles. A continuación hacemos un
+          desglose de los más importantes:
+        </p>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Método</th>
+              <th>¿Qué hace?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className={styles.bold}>console.log()</td>
+              <td>
+                Muestra por la consola lo que le proveemos al método, desde
+                texto plano, variables, objetos...
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.error()</td>
+              <td>
+                Se utiliza para mostrar mensaje de error. Estos mensajes
+                aparecen en rojo en nuestro
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.warn()</td>
+              <td>
+                El mensaje que nos proporciona es de advertencia, en consola lo
+                veremos de color amarillo.
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.info()</td>
+              <td>
+                Es muy parecido al console.log(), pero en este caso nos muestra
+                mensajes de información en la consola.
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.clear()</td>
+              <td>
+                Nos limpia la consola, pero podemos escribir también
+                directamente <strong>clear()</strong>, o también utilizando{" "}
+                <kbd>CTRL</kbd>+<kbd>L</kbd>, el mismo comando para personas que
+                usen un mac
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.group(label)</td>
+              <td>Anida grupos de console añadiéndoles una tabulación</td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.groupCollapsed(label)</td>
+              <td>
+                Encpasula todos los console que pongamos en un grupo, y
+                tendremos que expandir el grupo para ver todo lo que hay.
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.groupEnd(label)</td>
+              <td>
+                Quita un nivel a la anidación de un{" "}
+                <strong>console.group()</strong> o un{" "}
+                <strong>console.groupCollapsed()</strong>
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.table(data)</td>
+              <td>
+                Este método debes de pasarle un objeto o un array, y también
+                tiene un parámetro adicional llamado <strong>columns</strong>,
+                para mostrar sólo los datos que queramos: console.table(data,
+                ["columna"])
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.time(label)</td>
+              <td>
+                Podemos saber cuanto tiempo ha pasado al ejecutarse ciertas
+                acciones y le podemos añadir un label para indicarle el nombre
+                al temporizador
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.bold}>console.timeEnd(label)</td>
+              <td>
+                Detiene el temporizador que se haya creado con{" "}
+                <strong>console.time(label)</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 className={styles.subtitle_block}>¿Estilos en la consola?</h3>
+        <p>
+          Podemos darle un toque peculiar a nuestros textos en la consola, es
+          algo que no es muy práctico, pero es curioso saberlo. Para poder
+          realizar esto vamos a analizar el siguiente código:
+        </p>
+        <Code language="javascript" code={sytlesInConsole} />
+        <p>
+          Si lo ejecutamos vemos que nos añade el texto con un fondo de color y
+          unos cuantos detalles de estilos más. Para utilizar estilos, debemos
+          de poner <strong>%c</strong> antes del texto que deseemos poner.
+        </p>
+        <h3 className={styles.subtitle_block}>
+          ¿Podemos usar obviar el console.log()?
+        </h3>
+        <p>
+          Si vamos a utilizar la consola de Chrome podemos obviar el{" "}
+          <strong>console.log()</strong>, pero ojo, si lo vamos a utilizar desde
+          una web o una aplicación Javascript, debemos de utilizar siempre el
+          objeto <strong>console.log()</strong>.
+        </p>
+        <h3 className={styles.subtitle_block}>
+          Chrome Dev Tools: características importantes
+        </h3>
+        <p>
+          Las Dev Tools de Chrome o de cualquier otro navegador, son bastante
+          potentes, nos hemos centrado hasta ahora a la parte de la consola,
+          pero realmente le vamos a dar más uso a otras herramientas
+          incorporadas.
+        </p>
+        <h3 className={styles.subtitle_block}>Elements (elementos)</h3>
+        <p>
+          Esta herramienta, muestra la estructura del documento HTML (el DOM del
+          docuemnto). Vamos a analizar distintas herramientas que tiene este
+          apartado:
+        </p>
+        <ol className="ol-list">
+          <li>
+            - <strong>Inspeccionar el DOM</strong>: podemos visualizar el DOM de
+            los elementos, modificarlos, etc.{" "}
+          </li>
+          <li>
+            - <strong>Ver los estilos de los elementos</strong>: podemos
+            visualizar los estilos, modificarlos, etc.
+          </li>
+          <li>
+            - <strong>Seleccionar elementos del DOM desde la consola:</strong> a
+            través del comando $("element") podemos seleccionar cualquier
+            elemento, esto equivaldría a document.querySelector("elemento"). Si
+            queremos seleccionar todos los elementos de un documento
+            utilizaremos el doble dólar, y lo haríamos de la siguiente manera:
+            $$("elemento"). Podemos inspeccionar desde la consola a través del
+            método inspect(), nos señalará en el navegador en elemento que le
+            hemos puesto en el inspect.
+          </li>
+          <li>
+            - <strong>Referencia a una selección:</strong> podemos seleccionar
+            una parte del DOM, visualizarlo y editarlo sin tener que hacer una
+            búsqueda. Lo usuaremos a través de $0 (hay hasta 4 elementos en el
+            histórico).
+          </li>
+          <li>
+            - <strong>Ver las propiedades de un elemento:</strong> podemos
+            combinar el anterior comando con el comando dir, para ver las
+            propiedades o los métodos de un elemento del DOM.
+          </li>
+        </ol>
       </article>
     </div>
   );

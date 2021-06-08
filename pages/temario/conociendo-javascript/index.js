@@ -108,7 +108,7 @@ function TemarioConociendoJavaScript() {
           En abril de 1995 Netscape contrató a <strong>Brendan Eich</strong>, se
           le dio la tarea de crear un prototipo funcional de un lenguaje de
           programación que se ejecutara en el navegador, que se pareciera a JAVA
-          y que splo iba a tener... <strong>10 días</strong> para desarrollarlo.
+          y que sólo iba a tener... <strong>10 días</strong> para desarrollarlo.
           Es una proeza hacer algo así en este periodo de tiempo, y así podemos
           entender como JavaScript es un lenguaje un poco "especial".
         </p>

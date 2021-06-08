@@ -47,6 +47,8 @@
   font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  line-height: 1.6rem;
+
   thead {
     tr {
       background-color: rgba(1, 167, 132, 1);
@@ -57,6 +59,9 @@
   th,
   td {
     padding: 12px 15px;
+    &.bold {
+      font-weight: bold;
+    }
   }
   tbody {
     tr {
