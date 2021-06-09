@@ -49,7 +49,7 @@ function TemarioChromeConsola() {
         <ol className="ol-list">
           <li>
             - A través de la combinación de teclas <kbd>CTRL</kbd>+{" "}
-            <kbd>SHIFT</kbd>+<kbd>I</kbd> ó <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+
+            <kbd>SHIFT</kbd>+<kbd>I</kbd> ó <kbd>CMD</kbd>+<kbd>OPTION</kbd>+
             <kbd>I</kbd> en mac.
           </li>
           <li>

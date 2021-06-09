@@ -1,3 +1,7 @@
 .wrapper__code {
   margin: 22px 0;
+  box-shadow: 0 0 8px #333, inset 0 5px 0 rgb(0 0 0 / 50%);
+  pre {
+    border-radius: 0px;
+  }
 }
