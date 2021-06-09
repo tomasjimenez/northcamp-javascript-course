@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../../../styles/modules/ModuleBlock.module.scss";
 import ModuleBlock from "../../../modules/Block/ModuleBlock";
 import Code from "../../../components/Code/Code";
@@ -67,6 +68,26 @@ console.log(nombre)`;
 const constExample = `const GRAVITY = 9.8;
 console.log(GRAVITY);`;
 
+const varVsLetExample = `/** OPCIÓN CON LET **/
+// Nos tiene que dar valor undefined
+console.log("Valor anterior" + x);  
+for (let x = 0; x < 2; x++) {
+  // Valores: 0, 1
+  console.log("Valor: " + x);   
+}
+// Lo llamamos al final y es undefined    
+console.log("Al acabar" +  x);  
+
+/** OPCIÓN CON VAR **/
+// Nos tiene que dar valor undefined
+console.log("Valor anterior" + x);  
+for (var x = 0; x < 2; x++) {
+  // Valores: 0, 1
+  console.log("Valor: " + x);   
+}
+// Nos devuelve hasta 2 :_D
+console.log("Al acabar" +  x);`;
+
 function TemarioVariablesJS() {
   return (
     <div className={styles.container}>
@@ -112,27 +133,29 @@ function TemarioVariablesJS() {
         <Code language="javascript" code={undefinedVar} />
         <p>
           Hemos dado nuestros primeros pasos con las variables, hemos podido
-          inicializar una variable y ver que si no inicializamos tenemos el
-          valor undefined. Vamos a ver los distintos tipos de variables que
-          tiene JavaScript.
+          inicializar una variable y ver que si no inicializamos una variable,
+          como resultado tenemos el valor <strong>undefined</strong>. Vamos a
+          ver los distintos tipos de variables que tiene JavaScript.
         </p>
         <h3 className={styles.subtitle_block}>VAR</h3>
         <p>
-          Es la forma antigua de declarar variables, antiguamente sólo teníamos
-          este tipo de variable y podíamos tener muchos errores. A la hora de
-          inicializarla, podemos volverle a asignarle un valor nuevo y eso podía
-          ser una barra libre si no se tenía un control. También es peculiar
-          porque tiene un scope por le general que es global (que desde
-          cualquier parte del código podemos acceder a él) y también tiene un
-          scope a nivel de función. Vamos a ver varios ejemplos para poder
-          entender como funciona el scope en var, y así poder hacernos una idea
-          como funciona, aunque <strong>var</strong> no lo utilicemos, podemos
-          verlo en código legacy y debemos de entender cómo funciona.
+          Es la forma antigua de declarar variables, sólo teníamos este tipo de
+          variable y podíamos tener muchos errores. A la hora de inicializarla,
+          podemos volverle a asignarle un valor nuevo y eso podía ser una barra
+          libre si no se tenía un control. También es peculiar porque tiene un
+          scope por le general que es <strong>global</strong> (que desde
+          cualquier parte del código podemos acceder a ella) y también tiene un
+          scope a nivel de <strong>función</strong>. Vamos a ver varios ejemplos
+          para poder entender como funciona el scope en var, y así poder
+          hacernos una idea de como funciona, aunque <strong>var</strong> no lo
+          utilicemos, podemos verlo en código legacy y debemos de entender cómo
+          funciona.
         </p>
         <p>
-          Este es un ejemplo donde vemos que tenemos un scope global y un scope
-          en la función, nos va a devolver valores distintos, fuera de la
-          función y dentro de la función:
+          Este es un ejemplo donde vemos que tenemos un{" "}
+          <strong>scope global</strong> y un{" "}
+          <strong>scope en la función</strong>, nos va a devolver valores
+          distintos, fuera de la función y dentro de la función:
         </p>
         <Code language="javascript" code={varFunctionScope} />
         <p>
@@ -145,8 +168,7 @@ function TemarioVariablesJS() {
         <p>
           El uso de <strong>var</strong>, sólo lo debemos de utilizar si
           queremos realizar proyectos en navegadores antiguos, o estamos
-          empezando, o para mantener un código que es antiguo. Realmente
-          deberíamos de huír del uso de <strong>var</strong>.
+          empezando, o para mantener un código que es antiguo.
         </p>
         <h3 className={styles.subtitle_block}>LET</h3>
         <p>
@@ -154,6 +176,14 @@ function TemarioVariablesJS() {
           la versión de ES6 o ES2015. Se realizó este cambio porque en vez de
           tener un scope global o de función, ahora tendremos ambitos globales o
           locales, como otros lenguajes de programación.
+        </p>
+        <p>Esta diferencia de ámbito podemos verlo si usamos un bucle for:</p>
+        <Code language="javascript" code={varVsLetExample} />
+        <p>
+          Esto está sucediendo porque con <strong>let</strong> la variable es de{" "}
+          <strong>ámbito local</strong>, mientras que con <strong>var</strong>,
+          tenemos un ámbito global o como se llamaba antes, ámbito a nivel de
+          función.
         </p>
         <h3 className={styles.subtitle_block}>CONST</h3>
         <p>
@@ -172,23 +202,127 @@ function TemarioVariablesJS() {
         </p>
         <p>
           Una buena práctica para el uso de constantes, es utilizar su nombre en
-          mayúsculas, y si un nombre de variable compuesto (por ejemplo
-          firstName) lo usaríamos de la siguiente manera: FIRST_NAME. Al ver una
-          variable en mayúsculas, vamos a saber rápidamente que es una
-          constante.
+          mayúsculas, y si un nombre de variable con espacios (por ejemplo
+          firstName) lo usaríamos de la siguiente manera:{" "}
+          <strong>FIRST_NAME</strong>. Al ver una variable en mayúsculas, vamos
+          a saber rápidamente que es una constante.
         </p>
-        <h3 className={styles.subtitle_block}>Nomenclaturas</h3>
+        <h3 className={styles.subtitle_block}>
+          Convenciones en el nombrado de variables
+        </h3>
+        <div className={styles.img_center}>
+          <Image
+            src="/images/temario/variables/searching-variable.jpeg"
+            width="500"
+            height="600"
+            alt="Carga JavaScript"
+            loading="lazy"
+          />
+        </div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Muchas veces estamos nombrando variables o cualquier elemento de
+          nuestro código y no le damos la importancia que debe. Las variables
+          son muy importantes, si eliges un buen nombre, puede ser muy
+          descriptivo y podemos saber en todo momento que está haciendo.
         </p>
+        <p>
+          De esta manera podremos obviar los comentarios ya que al tener un
+          nombre muy descriptivo, nos va a ayudar a que otras personas también
+          entiendan nuestro código. Imaginaros que hay una variable se llama a,
+          ¿qué hace realmente a?. Si pusieramos un nombre a la variable del tipo{" "}
+          <strong>getAvatar()</strong>, ¿a qué podéis intuir lo que está
+          haciendo esa función?.
+        </p>
+        <p>
+          Cuando empezamos le ponemos cualquier nombre a las variables, y eso es
+          un gran fallo, debemos de pensar bien que nombre ponerles, porque
+          nosotros podemos entender nuestro código, pero siempre tenemos que
+          estar escribiendo código para que todo el mundo pudiera leerlo.
+          Siempre imaginaros que el código es un libro de instrucciones, y tú
+          tienes que decirle a quién lo lea, que está haciendo el código en todo
+          momento. Así que debemos de poner{" "}
+          <strong>nombres descriptivos</strong> a nuestras variables, o se puede
+          volver todo insostenible.
+        </p>
+        <p>
+          Muchas veces cuando escribimos código, ponemos un nombre a una
+          variable, y más adelante lo volvemos a cambiar, tranquilidad con esto,
+          hasta la persona más experimentada hace esto.
+        </p>
+        <p>
+          La única excepción a esta norma es en los bucles como un for que
+          tienen indices, solemos utilizarlo con una letra (i, j, k, o a, b,
+          c...)pero siempre de una forma correlativa.
+        </p>
+        <h3 className={styles.subtitle_block}>Nombres de convenciones</h3>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Uso</th>
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>🐍 snake_case</strong>
+              </td>
+              <td>
+                Las palabras se separan con un guión bajo y se escriben siempre
+                en minúsculas.
+              </td>
+              <td>north_camp</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>🥙 kebab-case</strong>
+              </td>
+              <td>
+                Las palabras se separan con un guión normal y se escriben
+                siempre en minúsculas.
+              </td>
+              <td>north-camp</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>🐪 camelCase</strong>
+              </td>
+              <td>
+                Primera palabra, minúsculas. El resto en minúsculas, salvo la
+                primera letra. La más utilizada en Javascript.
+              </td>
+              <td>northCamp</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>💨 PascalCase</strong>
+              </td>
+              <td>
+                Idem a la anterior, pero todas las palabras empiezan con la
+                primera letra mayúscula. Se utiliza en las Clases.
+              </td>
+              <td>NorthCamp</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>⚫️ dot.case</strong>
+              </td>
+              <td>
+                Las palabras van en minúsculas separadas por puntos. En
+                Javascript no se puede usar.
+              </td>
+              <td>north.camp</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>🤦🤦‍♀️ mElaSuDatodOcAsE</strong>
+              </td>
+              <td>Desquiciar a cualquiera que programe</td>
+              <td>Mejor no dar ejemplos 😱</td>
+            </tr>
+          </tbody>
+        </table>
       </article>
     </div>
   );

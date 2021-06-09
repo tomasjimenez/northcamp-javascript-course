@@ -70,26 +70,28 @@ function TemarioAgregandoJS() {
           Si queremos incluir <strong>JavaScript</strong> a nuestro documento{" "}
           <strong>HTML</strong>, podemos realizarlo de distintas maneras. Los
           frameworks o librerías, muchas veces hacen este trabajo por nosotros y
-          nos despreocupamos de agregar nuestro código en JavaScript a un
-          archivo HTML. En un documento HTML veremos distintas etiquetas, pero
-          las principales van a ser: DOCTYPE, html, head y body. Después de
-          estas etiquetas tendremos etiquetas semánticas para dividir contenido
-          como: article, header, footer, aside, nav, etc. Estas últimas no son
-          la estructura principal de un documento HTML, y las primeras siempre
-          son necesarias que estén.
+          nos despreocupamos de agregar nuestro archivo JavaScript a un
+          documento HTML. Vamos a ver distintas etiquetas en un documento HTML,
+          pero las principales van a ser:{" "}
+          <strong>DOCTYPE, html, head y body</strong>. Las otras etiquetas,
+          serán etiquetas semánticas para dividir contenido como: article,
+          header, footer, aside, nav, etc. Estas últimas no son necesarias para
+          la estructura principal de un documento HTML pero sin las primeras no
+          lo estaríamos realizando bien.
         </p>
         <p>
           En un documento HTML podemos agregarle estilos o scripts de
           JavaScript. Lo que hará el navegador es descargarlo y aplicar lo que
-          pone en el documento, si es un CSS aplicar estilos o si es JavaScript
-          realizar la lógica implementada en el código.
+          le diga dicho documento. Si es un CSS, aplica los estilos o si es un
+          archivo JavaScript ejecuta la lógica.
         </p>
         <p>
-          En las distintas secciones de esta sección, veremos distintas formas
-          de agregar JavaScript a nuestro documento HTML, vamos a realizar
-          prácticas para ver que nuestro código se ejecuta con un console.log.
-          Antes crearemos una variable con nuestro nombre y vamos a concatenar
-          un string para que nos salude.
+          Durante esta sección, veremos distintas formas de agregar JavaScript a
+          nuestro documento HTML. Para empezar, vamos a realizar una práctica
+          para ver que nuestro código JavaScript se ejecuta y muestra un{" "}
+          <strong>console.log</strong> en la consola del navegador. Antes
+          crearemos una variable con nuestro nombre y vamos a concatenar un
+          string para que nos salude.
         </p>
         <h3 className={styles.subtitle_block}>JavaScript en línea</h3>
         <p>
@@ -110,31 +112,37 @@ function TemarioAgregandoJS() {
           archivo HTML, pero la mejor estrategia es separar toda la lógica fuera
           de nuestro documento HTML, por limpieza y para tener archivos
           independientes. Habrá veces que lo usemos en un inicio para hacer
-          pruebas, pero como norma no lo vamos a usar de esta manera. Esta forma
-          de poner nuestro código de Javascript en el documento HTML, la
+          pruebas, pero como norma, no vamos a hacer uso de ello. Esta forma de
+          poner nuestro código de Javascript en el documento HTML, la
           denominamos <strong>JavaScript en línea</strong> (inline).
         </p>
         <h3 className={styles.subtitle_block}>JavaScript en archivo externo</h3>
         <p>
-          Antes hemos visto como poner JavaScript de forma inline, pero hemos
-          visto que no es la mejor manera. Pues ya que sabemos esto, vamos a
-          realizar el mismo ejemplo fuera de nuestro documento HTML. Al
-          realizarlo en un archivo externo, podemos reutilizar nuestro archivo
-          en más páginas y no tenemos que estar copiando y pegando toda la
-          lógica en todos lados. En programación hay una norma: si estás
-          reptiendo algo, es que lo estás haciendo mal y lo puedes simplificar.
+          Antes hemos visto como poner JavaScript en inline, pero hemos visto
+          que no es la mejor forma de implementarlo. Ya que sabemos esto, vamos
+          a realizar el mismo ejemplo pero esta vez, el archivo de JavaScript
+          estará fuera de nuestro documento HTML. Al realizarlo en un archivo
+          externo, podemos reutilizar nuestro código en más páginas y no tenemos
+          que estar copiando y pegando toda la lógica en todos lados. En
+          programación hay una norma: si estás reptiendo algo, es que lo estás
+          haciendo mal y lo puedes simplificar.
         </p>
         <p>
-          Para usar un archivo externo de vamos a necesitar un archivo HTML y un
-          archivo javascript.
+          Para llevar a cabo este ejercicio, debemos de crear un archivo
+          javascript y otro html.
         </p>
-        <p>Archivo HTML (index.html):</p>
+        <p>
+          <strong>Archivo HTML:</strong> index.html:
+        </p>
         <Code language="html" code={outsideHTMLJavaScriptExample} />
-        <p>Archivo JavaScript (src/js/greet.js):</p>
+        <p>
+          <strong>Archivo JavaScript:</strong> src/js/greet.js:
+        </p>
         <Code language="javascript" code={outsideFileJavaScriptExample} />
         <p>
-          Una vez hecho esto, hemos visto que de las dos maneras hace lo mismo,
-          pero tenemos mayor control si dividimos nuestro código en archivos.
+          Una vez hecho esto, habremos visto dos maneras de ejecutar código
+          JavaScript y siempre recordar que tenemos que evitar a toda costa
+          poner JavaScript en inline.
         </p>
         <h3 className={styles.subtitle_block}>
           Importancia de colocar etiqueta script
@@ -168,7 +176,7 @@ function TemarioAgregandoJS() {
                 En <strong>&lt;body&gt;</strong>
               </td>
               <td>Mientras se renderiza la página</td>
-              <td>Se renderiza hastaque llega a la etiqueta &lt;script&gt;</td>
+              <td>Se renderiza hasta que llega a la etiqueta &lt;script&gt;</td>
             </tr>
             <tr>
               <td>
@@ -217,9 +225,9 @@ function TemarioAgregandoJS() {
               </td>
               <td>
                 Por defecto si no ponemos nada, tendrá por defecto
-                text/javascript. Pero aquí también podremos poner que nuestro
-                archivo es un módulo de JavaScript, para utilizar las
-                funcionalidades <strong>import</strong> o{" "}
+                <strong>text/javascript</strong>. Pero aquí también podemos
+                poner que nuestro archivo es un módulo de JavaScript, para poder
+                utilizar las funcionalidades <strong>import</strong> o{" "}
                 <strong>export</strong>
               </td>
             </tr>
@@ -260,7 +268,7 @@ function TemarioAgregandoJS() {
           código, y mediante un archivo externo, lo que va a suceder es que
           cuando el navegador llegue a nuestro script, se pare la carga de HTML.
           Una vez parada, descargará nuestro archivo JavaScript y una vez
-          descargado, lo ejecutará. Una vez ejecutado, se reaunida toda la carga
+          descargado, lo ejecutará. Una vez ejecutado, se reanuda toda la carga
           de HTML. Resumiendo:
         </p>
         <ol className="ol-list">
